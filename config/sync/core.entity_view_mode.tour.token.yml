@@ -1,0 +1,14 @@
+uuid: 4b972759-9c46-4b34-9f62-f82188a1ade8
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - tour
+third_party_settings:
+  lightning_core:
+    internal: true
+id: tour.token
+label: Token
+targetEntityType: tour
+cache: true

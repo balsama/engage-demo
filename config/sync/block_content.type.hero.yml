@@ -1,0 +1,10 @@
+uuid: a0b65504-6d10-4e70-96db-2c42e70d0ae1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VK6rOXdyxGqAjQxuFNC0719b089yEpXDCZOJidvAcPg
+id: hero
+label: Hero
+revision: 0
+description: 'Contains text over a large image.'

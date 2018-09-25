@@ -1,0 +1,86 @@
+uuid: d8b668d3-47e1-490e-bf82-0c6783243e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.landing_page
+    - node.type.page
+    - node.type.recipe
+  module:
+    - content_moderation
+_core:
+  default_config_hash: gx_wpDnF7SB7gotH7H1vwu7evo7mNzPbu6gorwanG3U
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 5
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -5
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    review:
+      label: 'In review'
+      weight: -1
+      published: false
+      default_revision: false
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - review
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - review
+    review:
+      label: Review
+      to: review
+      weight: 0
+      from:
+        - draft
+        - review
+  entity_types:
+    node:
+      - article
+      - landing_page
+      - page
+      - recipe

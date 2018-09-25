@@ -1,0 +1,31 @@
+uuid: 005b7844-7918-4f2b-9aa3-f493d03e4f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    is_enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+_core:
+  default_config_hash: ObcReif-MgPUTbRABrjf6GLR7OVpcD8af9joyEx8gzQ
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content: {  }
+hidden:
+  body: true
+  layout_builder__layout: true
+  links: true

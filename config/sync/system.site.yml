@@ -1,0 +1,14 @@
+uuid: dc877f9e-c465-41d8-8cc3-66b87b61085a
+name: Umami
+mail: admin@example.com
+slogan: 'occupy, attract, and involve'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
