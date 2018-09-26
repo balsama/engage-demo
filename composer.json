@@ -59,8 +59,14 @@
         ],
         "setup": [
             "cd docroot && php core/scripts/drupal install config_installer --no-interaction",
-            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content",
+            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content"
+        ],
+        "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
+        ],
+        "quick-start": [
+            "@setup",
+            "@run-server"
         ]
     },
     "extra": {
