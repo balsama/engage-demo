@@ -13,13 +13,13 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/uid": [
             {
-                "href": "http:\/\/default\/user\/4?_format=hal_json",
+                "href": "http:\/\/default\/user\/8?_format=hal_json",
                 "lang": "en"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_author": [
             {
-                "href": "http:\/\/default\/user\/4?_format=hal_json"
+                "href": "http:\/\/default\/user\/8?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_image": [
@@ -52,7 +52,7 @@
     ],
     "vid": [
         {
-            "value": 38
+            "value": 58
         }
     ],
     "langcode": [
@@ -68,7 +68,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-09-26T12:45:47+00:00",
+            "value": "2018-09-26T13:41:59+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -85,7 +85,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "a1b63898-2bf2-45ed-864e-b24188dbb07d"
+                        "value": "32bfdb03-240c-41c6-8a84-52da67505766"
                     }
                 ]
             }
@@ -94,7 +94,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/4?_format=hal_json"
+                        "href": "http:\/\/default\/user\/8?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -102,7 +102,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "bc9e2118-a771-442e-96d0-fa31c07c53fb"
+                        "value": "89af96b5-4c92-4087-ba5a-844f24a71cf0"
                     }
                 ],
                 "lang": "en"
@@ -112,7 +112,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/4?_format=hal_json"
+                        "href": "http:\/\/default\/user\/8?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -120,7 +120,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "bc9e2118-a771-442e-96d0-fa31c07c53fb"
+                        "value": "89af96b5-4c92-4087-ba5a-844f24a71cf0"
                     }
                 ]
             }
@@ -200,7 +200,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-26T12:45:47+00:00",
+            "value": "2018-09-26T13:41:59+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }

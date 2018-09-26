@@ -69,7 +69,7 @@
     "path": [
         {
             "alias": "\/recipe-category\/main-course",
-            "pid": 30,
+            "pid": 3,
             "langcode": "en",
             "lang": "en"
         }
