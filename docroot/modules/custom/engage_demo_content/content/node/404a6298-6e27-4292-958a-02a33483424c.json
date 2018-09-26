@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/17?_format=hal_json"
+            "href": "http:\/\/default\/so-tasty?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/landing_page"
@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 18
+            "value": 19
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-09-26T01:37:40+00:00",
+            "value": "2018-09-26T02:22:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-26T02:02:51+00:00",
+            "value": "2018-09-26T02:22:00+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -145,8 +145,8 @@
     ],
     "path": [
         {
-            "alias": null,
-            "pid": null,
+            "alias": "\/so-tasty",
+            "pid": 2,
             "langcode": "en",
             "lang": "en"
         }
