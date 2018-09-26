@@ -39,12 +39,12 @@ install:
   # Build the code base from the lock file.
   - composer install
   # Install the demo cleanly so that settings.php will be created properly.
-  - composer setup
+  - composer setup &>/dev/null &
 
 before_script:
-  - drush config:set system.date timezone.default $TZ --yes
   - drush runserver --default-server=builtin 8080 &>/dev/null &
   - google-chrome-stable --headless --disable-gpu --no-sandbox --remote-debugging-port=9222 http://localhost &
+  - drush status
 
 script:
   - composer validate composer.json --no-check-all --ansi --no-interaction
