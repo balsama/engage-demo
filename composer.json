@@ -26,6 +26,8 @@
         "drupal/lightning_media": "^3.0",
         "drupal/lightning_workflow": "dev-3.x#7b0a5110da4df7a6b784a8750d41b6c32d9b6674",
         "drupal/moderation_dashboard": "^1.0@alpha",
+        "drupal/core": "8.6.x-dev#44ddc7b",
+        "drupal/lightning_core": "dev-3.x#c55dd07",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
