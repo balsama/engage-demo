@@ -20,6 +20,7 @@
         "drupal/config_installer": "1.8.0",
         "drupal/console": "^1.0.2",
         "drupal/default_content": "1.0.0-alpha7",
+        "drupal/file_entity": "^2.0@beta",
         "drupal/lightning_api": "^2.5",
         "drupal/lightning_layout": "2.0.0-alpha3",
         "drupal/lightning_media": "^3.0",
@@ -70,6 +71,11 @@
             "@composer install",
             "@composer setup",
             "@composer run-server"
+        ],
+        "custom-quick-start": [
+            "drush si config_installer --yes",
+            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
+            "drush user:pass admin admin"
         ]
     },
     "extra": {
