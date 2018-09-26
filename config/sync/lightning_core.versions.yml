@@ -81,3 +81,5 @@ lightning_api: 2.7.0
 openapi_ui: 1.0.0-rc1
 openapi_ui_redoc: 1.0.0-rc1
 openapi_ui_swagger: 1.0.0-rc2
+hal: 8.6.1
+default_content: 1.0.0-alpha7
