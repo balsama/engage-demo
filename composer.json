@@ -92,7 +92,7 @@
         "patches": {
             "drupal/config_installer": {
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
-                "https://www.drupal.org/files/issues/2018-09-06/2991182-9.patch"
+                "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             }
         }
     }
