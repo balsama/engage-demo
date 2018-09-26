@@ -13,7 +13,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/uid": [
             {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/user\/4?_format=hal_json",
                 "lang": "en"
             }
         ],
@@ -52,7 +52,7 @@
     ],
     "vid": [
         {
-            "value": 37
+            "value": 38
         }
     ],
     "langcode": [
@@ -68,7 +68,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2018-09-26T12:39:48+00:00",
+            "value": "2018-09-26T12:45:47+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -94,7 +94,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/user\/4?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -102,7 +102,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "a1b63898-2bf2-45ed-864e-b24188dbb07d"
+                        "value": "bc9e2118-a771-442e-96d0-fa31c07c53fb"
                     }
                 ],
                 "lang": "en"
@@ -200,7 +200,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-26T12:39:48+00:00",
+            "value": "2018-09-26T12:45:47+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
