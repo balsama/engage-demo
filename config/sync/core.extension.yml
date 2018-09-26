@@ -14,10 +14,12 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  default_content: 0
   demo_umami_content: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
+  engage_demo_content: 0
   entity_browser: 0
   entity_browser_block: 0
   entity_embed: 0
@@ -25,6 +27,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
@@ -47,6 +50,7 @@ module:
   media_entity_instagram: 0
   media_entity_twitter: 0
   menu_ui: 0
+  moderation_sidebar: 0
   node: 0
   openapi: 0
   openapi_ui: 0

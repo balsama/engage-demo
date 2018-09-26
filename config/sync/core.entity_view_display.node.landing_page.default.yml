@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.body
     - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
   module:
@@ -17,14 +18,30 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings: {  }
-        components: {  }
+        components:
+          e880f38f-2a39-4fb5-b1e0-beda34e6124f:
+            uuid: e880f38f-2a39-4fb5-b1e0-beda34e6124f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:landing_page:content_moderation_control'
+            additional: {  }
+            weight: 0
+    enabled: true
 _core:
   default_config_hash: ObcReif-MgPUTbRABrjf6GLR7OVpcD8af9joyEx8gzQ
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
 mode: default
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   body: true
   layout_builder__layout: true

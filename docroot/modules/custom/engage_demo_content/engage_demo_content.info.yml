@@ -1,0 +1,7 @@
+name: 'Engage demo content'
+type: module
+description: 'Imports default content for the 2018 Austin Engage conference demo'
+package: Custom
+core: 8.x
+dependencies:
+  - default_content:default_content
