@@ -1,6 +1,6 @@
+[![Build Status](https://travis-ci.org/balsama/engage-demo.svg?branch=master)](https://travis-ci.org/balsama/engage-demo)
+👉[Development Snapshot](http://engagedemon9r8txkdsy.devcloud.acquia-sites.com/AH_VIEW)👈
 # Engage Drupal + Lightning Demo site
-
-### 👉[Development Snapshot](http://engagedemon9r8txkdsy.devcloud.acquia-sites.com/AH_VIEW)👈
 
 This is used to create an install of the site used in the Lightning + Drupal
 demo for Acquia Engage Austin 2018.
