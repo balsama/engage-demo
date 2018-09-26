@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 17
+            "value": 18
         }
     ],
     "langcode": [
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "93f883f1-3db4-4d41-9150-ed7822915677"
+                        "value": "1092c269-9d8e-469c-91a9-f882697bdb19"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "93f883f1-3db4-4d41-9150-ed7822915677"
+                        "value": "1092c269-9d8e-469c-91a9-f882697bdb19"
                     }
                 ],
                 "lang": "en"
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-26T01:37:40+00:00",
+            "value": "2018-09-26T02:02:51+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -157,6 +157,12 @@
             "format": "basic_html",
             "processed": "<p>This is the main list page created with Layout Builder<\/p>\n",
             "summary": "",
+            "lang": "en"
+        }
+    ],
+    "layout_builder__layout": [
+        {
+            "section": {},
             "lang": "en"
         }
     ]
