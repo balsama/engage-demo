@@ -14,6 +14,11 @@
 # Ignore Drupal's file directory
 /docroot/sites/*/files/
 
+# Ignore config with UUIDs that change on every install
+/config/sync/block.block.umami_footer_promo
+/config/sync/block.block.umami_disclaimer
+/config/sync/block.block.umami_banner_recipes
+
 # Ignore SimpleTest multi-site environment.
 /docroot/sites/simpletest
 

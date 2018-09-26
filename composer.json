@@ -80,7 +80,8 @@
         "custom-quick-start": [
             "drush si config_installer --yes",
             "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
-            "drush user:pass admin admin"
+            "drush user:pass admin admin",
+            "drush default-content-moderation-import"
         ]
     },
     "extra": {
