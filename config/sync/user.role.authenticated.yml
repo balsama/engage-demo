@@ -14,4 +14,5 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format basic_html'
+  - 'view files'
   - 'view media'

@@ -1,0 +1,11 @@
+uuid: c86c386e-44b0-4fb5-87e5-02d87b1ee667
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iJ1FZojKBfhvhqubLJM6ar3kHpcUsU_EEsAUttL4NeA
+id: video
+label: Video
+description: 'A <em>Video</em> file is a moving visual recording.'
+mimetypes:
+  - 'video/*'
