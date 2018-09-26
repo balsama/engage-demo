@@ -65,8 +65,9 @@
             "cd docroot && php core/scripts/drupal server --no-interaction"
         ],
         "quick-start": [
-            "@setup",
-            "@run-server"
+            "@composer install",
+            "@composer setup",
+            "@composer run-server"
         ]
     },
     "extra": {
