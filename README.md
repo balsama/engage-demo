@@ -1,10 +1,14 @@
 # Engage Drupal + Lightning Demo site
-This is used to create an instal of the site used in the Lightning + Drupal
-demo.
+
+##👉[Nightly Build](http://engagedemon9r8txkdsy.devcloud.acquia-sites.com/AH_VIEW)👈
+
+This is used to create an install of the site used in the Lightning + Drupal
+demo for Acquia Engage Austin 2018.
 
 ## Dev Builds
 This repo is built out to Acquia Cloud on each commit to master. This site lives
-at http://foo.com and the User 1 creds are admin/admin.  
+at http://engagedemon9r8txkdsy.devcloud.acquia-sites.com and the User 1
+credentials are admin/admin.  
 
 ## Local Installation
 To install the demo site locally and open a browser:
