@@ -83,3 +83,4 @@ openapi_ui_redoc: 1.0.0-rc1
 openapi_ui_swagger: 1.0.0-rc2
 hal: 8.6.1
 default_content: 1.0.0-alpha7
+moderation_sidebar: 1.1.0
