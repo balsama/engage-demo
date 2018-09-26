@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/balsama/engage-demo.svg?branch=master)](https://travis-ci.org/balsama/engage-demo)
-👉[Development Snapshot](http://engagedemon9r8txkdsy.devcloud.acquia-sites.com/AH_VIEW)👈
+👉[Development Snapshot Sandbox](http://engagedemon9r8txkdsy.devcloud.acquia-sites.com/AH_VIEW)👈
 # Engage Drupal + Lightning Demo site
 
 This is used to create an install of the site used in the Lightning + Drupal
