@@ -19,11 +19,16 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/config_installer": "1.8.0",
         "drupal/console": "^1.0.2",
+        "drupal/core": "8.6.x-dev#44ddc7b",
         "drupal/default_content": "1.0.0-alpha7",
+        "drupal/default_content_moderation": "^1.0@beta",
+        "drupal/file_entity": "^2.0@beta",
         "drupal/lightning_api": "^2.5",
+        "drupal/lightning_core": "dev-3.x#c55dd07",
         "drupal/lightning_layout": "2.0.0-alpha3",
         "drupal/lightning_media": "^3.0",
         "drupal/lightning_workflow": "dev-3.x#7b0a5110da4df7a6b784a8750d41b6c32d9b6674",
+        "drupal/moderation_dashboard": "^1.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -60,7 +65,9 @@
         ],
         "setup": [
             "cd docroot && php core/scripts/drupal install config_installer --no-interaction",
-            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content"
+            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content",
+            "./scripts/set_content_directory.sh",
+            "drush default-content-moderation-import"
         ],
         "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
@@ -69,6 +76,11 @@
             "@composer install",
             "@composer setup",
             "@composer run-server"
+        ],
+        "custom-quick-start": [
+            "drush si config_installer --yes",
+            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
+            "drush user:pass admin admin"
         ]
     },
     "extra": {

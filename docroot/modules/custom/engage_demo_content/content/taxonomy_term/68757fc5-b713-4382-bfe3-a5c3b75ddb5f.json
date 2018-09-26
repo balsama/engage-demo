@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/recipe-category\/main-course?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/recipe_category"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/recipe_category\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 21
+        }
+    ],
+    "uuid": [
+        {
+            "value": "68757fc5-b713-4382-bfe3-a5c3b75ddb5f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "recipe_category"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Main course",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/recipe_category\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2018-09-26T12:24:45+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/recipe-category\/main-course",
+            "pid": 3,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}
