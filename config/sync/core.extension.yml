@@ -12,6 +12,7 @@ module:
   contact: 0
   content_moderation: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   default_content: 0
@@ -20,6 +21,7 @@ module:
   editor: 0
   embed: 0
   engage_demo_content: 0
+  entity_block: 0
   entity_browser: 0
   entity_browser_block: 0
   entity_embed: 0
@@ -82,6 +84,7 @@ module:
   views_ui: 0
   workflows: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   demo_umami: 1000
 theme:
