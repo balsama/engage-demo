@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 19
+            "value": 108
         }
     ],
     "langcode": [
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "1092c269-9d8e-469c-91a9-f882697bdb19"
+                        "value": "5afefd89-6d21-4aff-aabc-c272c3727429"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "1092c269-9d8e-469c-91a9-f882697bdb19"
+                        "value": "5afefd89-6d21-4aff-aabc-c272c3727429"
                     }
                 ],
                 "lang": "en"
@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2018-09-26T02:22:00+00:00",
+            "value": "2018-09-26T18:09:33+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -162,7 +162,8 @@
     ],
     "layout_builder__layout": [
         {
-            "section": {},
+            "section": {
+            },
             "lang": "en"
         }
     ]
