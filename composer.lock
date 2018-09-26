@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55c56e8e00768039b7e967e17dd7b4b9",
+    "content-hash": "4fcd3a8cf903f58c0674be30d24fac42",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1815,7 +1815,7 @@
                     }
                 },
                 "patches_applied": {
-                    "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush": "https://www.drupal.org/files/issues/2018-09-06/2991182-9.patch"
+                    "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush": "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

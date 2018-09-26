@@ -35,7 +35,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "process-timeout": 0
     },
     "autoload": {
         "classmap": [
@@ -58,8 +59,15 @@
         ],
         "setup": [
             "cd docroot && php core/scripts/drupal install config_installer --no-interaction",
-            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content",
+            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content"
+        ],
+        "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
+        ],
+        "quick-start": [
+            "@composer install",
+            "@composer setup",
+            "@composer run-server"
         ]
     },
     "extra": {
@@ -92,7 +100,7 @@
         "patches": {
             "drupal/config_installer": {
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
-                "https://www.drupal.org/files/issues/2018-09-06/2991182-9.patch"
+                "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             }
         }
     }
