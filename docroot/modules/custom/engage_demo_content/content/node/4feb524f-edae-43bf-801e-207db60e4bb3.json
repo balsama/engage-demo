@@ -1,0 +1,283 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/node\/35?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/recipe"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_author": [
+            {
+                "href": "http:\/\/default\/user\/4?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_image": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/2018-09\/zb.jpg",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_recipe_category": [
+            {
+                "href": "http:\/\/default\/recipe-category\/main-course?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_tags": [
+            {
+                "href": "http:\/\/default\/tags\/vegan?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 35
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4feb524f-edae-43bf-801e-207db60e4bb3"
+        }
+    ],
+    "vid": [
+        {
+            "value": 37
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "recipe"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2018-09-26T12:39:48+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a1b63898-2bf2-45ed-864e-b24188dbb07d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a1b63898-2bf2-45ed-864e-b24188dbb07d"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_author": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/4?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bc9e2118-a771-442e-96d0-fa31c07c53fb"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/2018-09\/zb.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ca6a1113-6410-4601-a54e-74e5fc028bd7"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_recipe_category": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/recipe-category\/main-course?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/recipe_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "68757fc5-b713-4382-bfe3-a5c3b75ddb5f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/recipe\/field_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/tags\/vegan?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "45d66540-9d36-4d34-90d5-1a8ab5a92b7b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Zucchini Boats",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-26T12:32:41+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-26T12:39:48+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "review",
+            "lang": "en"
+        }
+    ],
+    "field_cooking_time": [
+        {
+            "value": 40
+        }
+    ],
+    "field_difficulty": [
+        {
+            "value": "easy"
+        }
+    ],
+    "field_ingredients": [
+        {
+            "value": "zucchini"
+        },
+        {
+            "value": "corn"
+        },
+        {
+            "value": "tomatoes"
+        }
+    ],
+    "field_number_of_servings": [
+        {
+            "value": 2
+        }
+    ],
+    "field_preparation_time": [
+        {
+            "value": 10
+        }
+    ],
+    "field_recipe_instruction": [
+        {
+            "value": "<p>Smart squid gives lazy lummox who asks for job pen.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Smart squid gives lazy lummox who asks for job pen.<\/p>\n"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "<p>This quick brown fox jumps over lazy dog. How quickly deft jumping zebras vex.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>This quick brown fox jumps over lazy dog. How quickly deft jumping zebras vex.<\/p>\n"
+        }
+    ]
+}
