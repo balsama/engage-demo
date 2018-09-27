@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "993ea3af73901b7561e98a640f213e16",
+    "content-hash": "5c780b140913343a89ab3592d49fea54",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2415,6 +2415,10 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
+                    "2968500 - Change Inline Blocks workflow in layout build to match mocks": "https://www.drupal.org/files/issues/2018-09-19/2968500-18.patch",
+                    "2998862 - The Layout Builder block listing should be filterable": "https://www.drupal.org/files/issues/2018-09-20/2998862-3.patch",
+                    "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder": "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
+                    "3002608 - Hide contextual links not related to Layout Builder inside sections": "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-09-24/2815221-109.patch",
@@ -2423,7 +2427,6 @@
                     "2952390 - Off-canvas styles override CKEditor's reset and theme": "https://www.drupal.org/files/issues/2018-08-16/2952390-53.patch",
                     "2955065 - Customized layout does not display for node with customizations enabled when using full content view mode": "https://www.drupal.org/files/issues/2018-07-27/2955065-17.patch",
                     "2968110 - Layout Builder's ConfigureBlockFormBase forms do not display validation errors on submit": "https://www.drupal.org/files/issues/2018-05-03/2968110-3.patch",
-                    "2977587 - Improve block listing in Layout Builder by hiding/moving uncommon block plugins": "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch",
                     "2976148 - LayoutBuilderEntityViewDisplay::getRuntimeSections() does not delegate to plugins": "https://www.drupal.org/files/issues/2018-08-20/2976148-31.patch"
                 }
             },

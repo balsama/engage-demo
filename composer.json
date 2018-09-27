@@ -115,6 +115,24 @@
             "drupal/config_installer": {
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
+            },
+            "drupal/core": {
+                "2968500 - Change Inline Blocks workflow in layout build to match mocks":
+                "https://www.drupal.org/files/issues/2018-09-19/2968500-18.patch",
+                "2998862 - The Layout Builder block listing should be filterable":
+                "https://www.drupal.org/files/issues/2018-09-20/2998862-3.patch",
+                "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder":
+                "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
+                "3002608 - Hide contextual links not related to Layout Builder inside sections":
+                "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch"
+            }
+        },
+        "patches-ignore": {
+            "drupal/lightning_layout": {
+                "drupal/core": {
+                    "This patch conflicts with other more important UI updates":
+                    "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch"
+                }
             }
         }
     }
