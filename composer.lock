@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c780b140913343a89ab3592d49fea54",
+    "content-hash": "add4b104a82d1cd98b238bc692b6bf19",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2419,6 +2419,7 @@
                     "2998862 - The Layout Builder block listing should be filterable": "https://www.drupal.org/files/issues/2018-09-20/2998862-3.patch",
                     "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder": "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
                     "3002608 - Hide contextual links not related to Layout Builder inside sections": "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch",
+                    "2994550 - Filtering block plugins by context is slow": "https://www.drupal.org/files/issues/2018-09-25/2994550-30.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-09-24/2815221-109.patch",

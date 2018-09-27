@@ -42,7 +42,10 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "process-timeout": 0
+        "process-timeout": 0,
+        "preferred-install": {
+            "drupal/core": "dist"
+        }
     },
     "autoload": {
         "classmap": [
@@ -124,13 +127,15 @@
                 "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder":
                 "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
                 "3002608 - Hide contextual links not related to Layout Builder inside sections":
-                "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch"
+                "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch",
+                "2994550 - Filtering block plugins by context is slow":
+                "https://www.drupal.org/files/issues/2018-09-25/2994550-30.patch"
             }
         },
         "patches-ignore": {
             "drupal/lightning_layout": {
                 "drupal/core": {
-                    "This patch conflicts with other more important UI updates":
+                    "This patch (Improve block listing in Layout Builder by hiding/moving uncommon block plugins) conflicts with both 2968500 and 2998862.":
                     "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch"
                 }
             }
