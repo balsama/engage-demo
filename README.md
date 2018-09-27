@@ -41,7 +41,11 @@ See [Default Content's documentation][default_content_documentation] for more in
 The following content is provided and intended to be used by the demo (in
 addition to the content provided by the Umami Demo Content Module):
 
-- Landing Page, node 17, alias /so-tasty, 
+| Type  | Title | nid | Alias | Status|
+|-------|-------|-----|-------|-------|
+|Landing Page|So Tasty|17|/so-tasty|draft|
+|Article|Now with less sugar|55|/article/less-sugar|needs review|
+|Recipe|Zucchini Boats|35|<none>|needs review|
 
 [default_content_documentation]: https://www.drupal.org/docs/8/modules/default-content "Documentation on using the Default Content Drupal module"
 [demo_script]: https://docs.google.com/document/d/1MxBCYkDar-fAVjm8hOgwmPQpoWchOw-V_yHFeqWD7Ns/edit?usp=sharing "Acquia Engage 2018 Simplicity Demo"
