@@ -42,7 +42,10 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "process-timeout": 0
+        "process-timeout": 0,
+        "preferred-install": {
+            "drupal/core": "dist"
+        }
     },
     "autoload": {
         "classmap": [
@@ -115,6 +118,24 @@
             "drupal/config_installer": {
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
+            },
+            "drupal/core": {
+                "2977587 + 2968500 + 2998862 - Improve block listing in Layout Builder by hiding/moving uncommon block plugins; Change Inline Blocks workflow in layout build to match mocks; The Layout Builder block listing should be filterable":
+                "https://patch-diff.githubusercontent.com/raw/tedbow/drupal/pull/15.patch",
+                "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder":
+                "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
+                "3002608 - Hide contextual links not related to Layout Builder inside sections":
+                "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch",
+                "2994550 - Filtering block plugins by context is slow":
+                "https://www.drupal.org/files/issues/2018-09-25/2994550-30.patch"
+            }
+        },
+        "patches-ignore": {
+            "drupal/lightning_layout": {
+                "drupal/core": {
+                    "This patch (Improve block listing in Layout Builder by hiding/moving uncommon block plugins) is included in the combined 2977587 + 2968500 + 2998862 patch.":
+                    "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch"
+                }
             }
         }
     }

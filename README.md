@@ -20,9 +20,12 @@ To install the demo site locally and open a browser:
 2. Run
 
         composer quick-start
+
+## Demo
+The demo script and screenshots can be found in this [Google Doc][demo_script].
         
 ## Default content
-The Umami Demo Content module is insalled out of the box so all of the default
+The Umami Demo Content module is installed out of the box so all of the default
 content that comes with Umami will be created on install. The Default Content
 module along with the Engage Demo Content module
 (`docroot/modules/custom/engage_demo_content`) are also installed. Content
@@ -35,7 +38,14 @@ To export a piece of content you have created, run:
     
 See [Default Content's documentation][default_content_documentation] for more information.
 
-As of the time of this commit, there is a single Landing Page content type
-created on install at `/node/17` aliased to `so-tasty`.
+The following content is provided and intended to be used by the demo (in
+addition to the content provided by the Umami Demo Content Module):
+
+| Type  | Title | nid | Alias | Status|
+|-------|-------|-----|-------|-------|
+|Landing Page|So Tasty|17|/so-tasty|draft|
+|Article|Now with less sugar|55|/article/less-sugar|needs review|
+|Recipe|Zucchini Boats|35|<none>|needs review|
 
 [default_content_documentation]: https://www.drupal.org/docs/8/modules/default-content "Documentation on using the Default Content Drupal module"
+[demo_script]: https://docs.google.com/document/d/1MxBCYkDar-fAVjm8hOgwmPQpoWchOw-V_yHFeqWD7Ns/edit?usp=sharing "Acquia Engage 2018 Simplicity Demo"
