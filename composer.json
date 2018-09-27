@@ -120,10 +120,8 @@
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             },
             "drupal/core": {
-                "2968500 - Change Inline Blocks workflow in layout build to match mocks":
-                "https://www.drupal.org/files/issues/2018-09-19/2968500-18.patch",
-                "2998862 - The Layout Builder block listing should be filterable":
-                "https://www.drupal.org/files/issues/2018-09-20/2998862-3.patch",
+                "2977587 + 2968500 + 2998862 - Improve block listing in Layout Builder by hiding/moving uncommon block plugins; Change Inline Blocks workflow in layout build to match mocks; The Layout Builder block listing should be filterable":
+                "https://patch-diff.githubusercontent.com/raw/tedbow/drupal/pull/15.patch",
                 "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder":
                 "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
                 "3002608 - Hide contextual links not related to Layout Builder inside sections":
@@ -135,7 +133,7 @@
         "patches-ignore": {
             "drupal/lightning_layout": {
                 "drupal/core": {
-                    "This patch (Improve block listing in Layout Builder by hiding/moving uncommon block plugins) conflicts with both 2968500 and 2998862.":
+                    "This patch (Improve block listing in Layout Builder by hiding/moving uncommon block plugins) is included in the combined 2977587 + 2968500 + 2998862 patch.":
                     "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch"
                 }
             }
