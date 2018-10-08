@@ -31,3 +31,4 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  layout_builder__layout: true
