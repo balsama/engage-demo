@@ -188,13 +188,14 @@ display:
       path: articles
       menu:
         type: normal
-        title: Articles
+        title: 'Press Releases'
         description: ''
         expanded: false
         parent: ''
         weight: 20
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
