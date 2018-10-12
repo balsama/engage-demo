@@ -6,7 +6,7 @@ dependencies:
     - node.type.article
     - node.type.landing_page
     - node.type.page
-    - node.type.recipe
+    - node.type.press_release
   module:
     - content_moderation
 _core:
@@ -83,4 +83,4 @@ type_settings:
       - article
       - landing_page
       - page
-      - recipe
+      - press_release

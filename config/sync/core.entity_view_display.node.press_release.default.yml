@@ -1,0 +1,28 @@
+uuid: 158b67c4-f2f1-40ca-8b36-39dc3fe221fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press_release.body
+    - node.type.press_release
+  module:
+    - text
+    - user
+id: node.press_release.default
+targetEntityType: node
+bundle: press_release
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
