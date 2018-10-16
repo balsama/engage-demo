@@ -285,20 +285,20 @@ class InstallHelper implements ContainerInjectionInterface {
         'field_title' => [
           'value' => 'Super easy vegetarian pasta bake',
         ],
-        //'field_content_link' => [
-          //'uri' => 'internal:' . call_user_func(function () {
-            //$nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'Super easy vegetarian pasta bake']);
-            //$node = reset($nodes);
-            //return $this->aliasManager->getAliasByPath('/node/' . $node->id());
-          //}),
-          //'title' => 'Super easy vegetarian pasta bake',
-        //],
+        'field_content_link' => [
+          'uri' => 'internal:' . call_user_func(function () {
+            $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'Dynamic intelectual captital']);
+            $node = reset($nodes);
+            return $this->aliasManager->getAliasByPath('/node/' . $node->id());
+          }),
+          'title' => 'Balancing the books is our bread&butter',
+        ],
         'field_summary' => [
-          'value' => 'A wholesome pasta bake is the ultimate comfort food. This delicious bake is super quick to prepare and an ideal midweek meal for all the family.',
+          'value' => 'Simplify your operations by combining point of sale, capital and payroll all in one place. Find your solution today.',
         ],
         'field_banner_image' => [
-          'target_id' => $this->createFileEntity($module_path . '/default_content/images/veggie-pasta-bake-hero-umami.jpg'),
-          'alt' => 'Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings',
+          'target_id' => $this->createFileEntity($module_path . '/default_content/images/Banner_Main.jpg'),
+          'alt' => 'Simplify your operations by combining point of sale, capital and payroll all in one place',
         ],
       ],
       'umami_disclaimer' => [
@@ -306,7 +306,7 @@ class InstallHelper implements ContainerInjectionInterface {
         'info' => 'Umami disclaimer',
         'type' => 'disclaimer_block',
         'field_disclaimer' => [
-          'value' => '<strong>Umami Magazine & Umami Publications</strong> is a fictional magazine and publisher for illustrative purposes only.',
+          'value' => '<strong>Bread & Butter</strong> is a fictional organization for illustrative purposes only.',
           'format' => 'basic_html',
         ],
         'field_copyright' => [
