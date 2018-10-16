@@ -267,7 +267,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level.</h2>'
+            value: '<h2 class="text-align-center">Balancing the books is our bread & butter.</h2>'
             format: full_html
           plugin_id: text
       footer: {  }
