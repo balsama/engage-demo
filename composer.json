@@ -68,8 +68,11 @@
         ],
         "setup": [
             "cd docroot && php core/scripts/drupal install config_installer --no-interaction",
-            "cd docroot && ../vendor/bin/drush pm:uninstall demo_umami_content && ../vendor/bin/drush pm:enable demo_umami_content",
             "./scripts/set_content_directory.sh",
+            "@composer refresh-content"
+        ],
+        "refresh-content": [
+            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
             "drush default-content-moderation-import"
         ],
         "run-server": [
@@ -82,9 +85,8 @@
         ],
         "custom-quick-start": [
             "drush si config_installer --yes",
-            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
-            "drush user:pass admin admin",
-            "drush default-content-moderation-import"
+            "@composer refresh-content",
+            "drush user:pass admin admin"
         ]
     },
     "extra": {

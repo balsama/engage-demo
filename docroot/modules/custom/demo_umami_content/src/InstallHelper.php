@@ -283,7 +283,7 @@ class InstallHelper implements ContainerInjectionInterface {
         'info' => 'Umami Recipes Banner',
         'type' => 'banner_block',
         'field_title' => [
-          'value' => 'Super easy vegetarian pasta bake',
+          'value' => 'Spend less time on operations, more time on your business',
         ],
         'field_content_link' => [
           'uri' => 'internal:' . call_user_func(function () {
@@ -319,22 +319,22 @@ class InstallHelper implements ContainerInjectionInterface {
         'info' => 'Umami footer promo',
         'type' => 'footer_promo_block',
         'field_title' => [
-          'value' => 'Umami Food Magazine',
+          'value' => 'Bread & Butter',
         ],
         'field_summary' => [
-          'value' => 'Skills and know-how. Magazine exclusive articles, recipes and plenty of reasons to get your copy today.',
+          'value' => 'Simplify your operations by combining point of sale, capital and payroll all in one place.',
         ],
         'field_content_link' => [
           'uri' => 'internal:' . call_user_func(function () {
-            $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'About Umami']);
+            $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'About Bread & Butter']);
             $node = reset($nodes);
             return $this->aliasManager->getAliasByPath('/node/' . $node->id());
           }),
-          'title' => 'Find out more',
+          'title' => 'Find your solution',
         ],
         'field_promo_image' => [
-          'target_id' => $this->createFileEntity($module_path . '/default_content/images/umami-bundle.png'),
-          'alt' => '3 issue bundle of the Umami food magazine',
+          'target_id' => $this->createFileEntity($module_path . '/default_content/images/bread_butter_logowhite.png'),
+          'alt' => 'B&B - Find your solution',
         ],
       ],
     ];

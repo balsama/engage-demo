@@ -4,9 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
+    - core.entity_view_mode.node.teaser
+    - node.type.article
   module:
     - node
-    - user
 id: frontpage
 label: Frontpage
 module: node
@@ -19,9 +20,8 @@ display:
   default:
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -169,7 +169,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            recipe: recipe
+            article: article
           group: 1
           exposed: false
           expose:
@@ -185,6 +185,7 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            argument: null
           is_grouped: false
           group_info:
             label: ''
@@ -282,7 +283,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
   feed_1:
@@ -318,7 +318,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
   page_1:
@@ -336,6 +335,5 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
