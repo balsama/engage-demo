@@ -297,7 +297,7 @@ class InstallHelper implements ContainerInjectionInterface {
             $node = reset($nodes);
             return $this->aliasManager->getAliasByPath('/node/' . $node->id());
           }),
-          'title' => 'Balancing the books is our bread&butter',
+          'title' => 'Find your solution today',
         ],
         'field_summary' => [
           'value' => 'Simplify your operations by combining point of sale, capital and payroll all in one place. Find your solution today.',

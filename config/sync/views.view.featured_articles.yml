@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.highlighted_small
-    - node.type.article
+    - core.entity_view_mode.node.teaser
+    - node.type.press_release
     - system.menu.main
   module:
     - node
@@ -71,11 +71,15 @@ display:
             next: ››
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: highlighted_small
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -140,8 +144,40 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
-            article: article
+            press_release: press_release
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            argument: null
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -161,14 +197,14 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Articles
+      title: 'Press Releases'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: grid--3
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -185,7 +221,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: articles
+      path: press-releases
       menu:
         type: normal
         title: 'Press Releases'
