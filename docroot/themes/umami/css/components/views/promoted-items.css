@@ -114,3 +114,7 @@
     width: calc(50% - 28px);
   }
 }
+
+.grid--2 .view-header {
+  margin-top: 4rem;
+}
