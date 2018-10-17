@@ -280,7 +280,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $block_content_entities = [
       'umami_recipes_banner' => [
         'uuid' => '4c7d58a3-a45d-412d-9068-259c57e40541',
-        'info' => 'Umami Recipes Banner',
+        'info' => 'B&B Banner',
         'type' => 'banner_block',
         'field_title' => [
           'value' => 'Spend less time on operations, more time on your business',
@@ -303,7 +303,7 @@ class InstallHelper implements ContainerInjectionInterface {
       ],
       'umami_disclaimer' => [
         'uuid' => '9b4dcd67-99f3-48d0-93c9-2c46648b29de',
-        'info' => 'Umami disclaimer',
+        'info' => 'B&B disclaimer',
         'type' => 'disclaimer_block',
         'field_disclaimer' => [
           'value' => '<strong>Bread & Butter</strong> is a fictional organization for illustrative purposes only.',
@@ -316,7 +316,7 @@ class InstallHelper implements ContainerInjectionInterface {
       ],
       'umami_footer_promo' => [
         'uuid' => '924ab293-8f5f-45a1-9c7f-2423ae61a241',
-        'info' => 'Umami footer promo',
+        'info' => 'B&B footer promo',
         'type' => 'footer_promo_block',
         'field_title' => [
           'value' => 'Bread & Butter',
