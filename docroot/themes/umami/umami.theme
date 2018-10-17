@@ -92,5 +92,5 @@ function umami_preprocess_breadcrumb(&$variables) {
  * Implements hook_form_FORM_ID_alter().
  */
 function umami_form_search_block_form_alter(&$form, FormStateInterface $form_state) {
-  $form['keys']['#attributes']['placeholder'] = t('Search by keyword, ingredient, dish');
+  $form['keys']['#attributes']['placeholder'] = t('Search by keyword');
 }

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: vP7WIalCJ-ANgV9gHX4H7oFKEQocYmZ0l62Oo51fg_E
-name: 'Recipe category'
+name: 'Press Release category'
 vid: recipe_category
 description: ''
 hierarchy: 0

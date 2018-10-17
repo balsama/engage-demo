@@ -1,16 +1,13 @@
-uuid: 1e06ec5d-7c73-45a5-b904-50463e4b6948
+uuid: ac53298b-639b-4eac-b611-437aee4582f0
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.highlighted_bottom
+    - core.entity_view_mode.node.card
     - core.entity_view_mode.node.rss
-    - node.type.recipe
+    - node.type.article
   module:
     - node
-    - user
-_core:
-  default_config_hash: OJdhTIMi_eWjiHcTkoEXAKwvmpwsDIQgEv8M2AtzPJM
 id: frontpage
 label: Frontpage
 module: node
@@ -23,9 +20,8 @@ display:
   default:
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -173,7 +169,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            recipe: recipe
+            article: article
           group: 1
           exposed: false
           expose:
@@ -189,6 +185,7 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            argument: null
           is_grouped: false
           group_info:
             label: ''
@@ -207,7 +204,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 2
           offset: 0
       query:
         type: views_query
@@ -221,7 +218,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: highlighted_bottom
+          view_mode: card
       sorts:
         sticky:
           admin_label: ''
@@ -259,7 +256,7 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-      title: Recipes
+      title: Home
       header:
         area:
           id: area
@@ -271,7 +268,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level.</h2>'
+            value: '<h2 class="text-align-center">Balancing the books is our bread & butter.</h2>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -287,7 +284,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
   feed_1:
@@ -323,7 +319,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
   page_1:
@@ -341,6 +336,5 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
       max-age: -1
       tags: {  }
