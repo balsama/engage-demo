@@ -297,7 +297,7 @@ class InstallHelper implements ContainerInjectionInterface {
           'value' => 'Simplify your operations by combining point of sale, capital and payroll all in one place. Find your solution today.',
         ],
         'field_banner_image' => [
-          'target_id' => $this->createFileEntity($module_path . '/default_content/images/Banner_Main.jpg'),
+          'target_id' => $this->createFileEntity($module_path . '/default_content/images/banner.jpg'),
           'alt' => 'Simplify your operations by combining point of sale, capital and payroll all in one place',
         ],
       ],
