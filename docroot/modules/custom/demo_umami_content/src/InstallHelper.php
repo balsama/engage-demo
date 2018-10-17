@@ -168,6 +168,9 @@ class InstallHelper implements ContainerInjectionInterface {
             'alt' => $data['alt'],
           ];
         }
+        if (!empty($data['state'])) {
+            $values['moderation_state'] = $data['state'];
+        }
 
         // Create Node.
         $node = $this->entityTypeManager->getStorage('node')->create($values);
@@ -215,6 +218,9 @@ class InstallHelper implements ContainerInjectionInterface {
           if ($pr_body !== FALSE) {
             $values['body'] = [['value' => $pr_body, 'format' => 'basic_html']];
           }
+        }
+        if (!empty($data['state'])) {
+          $values['moderation_state'] = $data['state'];
         }
 
         $node = $this->entityTypeManager->getStorage('node')->create($values);
@@ -287,7 +293,7 @@ class InstallHelper implements ContainerInjectionInterface {
         ],
         'field_content_link' => [
           'uri' => 'internal:' . call_user_func(function () {
-            $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'Dynamic intelectual captital']);
+            $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['title' => 'Dynamic intellectual capital']);
             $node = reset($nodes);
             return $this->aliasManager->getAliasByPath('/node/' . $node->id());
           }),

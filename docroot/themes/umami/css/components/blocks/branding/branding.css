@@ -10,14 +10,14 @@
 @media screen and (min-width: 48em) {
   .block-system-branding-block {
     flex: 0 1 220px;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
     text-align: left;
   }
 }
 .site-logo {
   display: inline-block;
   width: 100%;
-  max-width: 205px;
+  max-width: 105px;
   background-color: inherit;
 }
 .site-logo:hover {
@@ -26,6 +26,6 @@
 
 .site-logo svg {
   width: 100%;
-  max-width: 205px;
+  max-width: 105px;
   height: auto;
 }

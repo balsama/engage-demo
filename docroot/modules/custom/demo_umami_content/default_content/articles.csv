@@ -1,3 +1,4 @@
-title,body,image,author,slug,tags
-How Financial Services Compete in a Content-Driven World,leverage-agile-frameworks.html,article-1-fin.jpg,Holly Foat,articles/leverage-agile-frameworks,"agile,frameworks"
-What the IRS’ New W-4 Forms Mean For Your Business,w4.html,article-2-irs.jpg,Grace Hamilton,articles/new-w4,"payroll,w4,taxes"
+title,body,image,author,slug,tags,state
+How Financial Services Compete in a Content-Driven World,leverage-agile-frameworks.html,article-1-fin.jpg,Holly Foat,articles/leverage-agile-frameworks,"agile,frameworks",published
+What the IRS’ New W-4 Forms Mean For Your Business,w4.html,article-2-irs.jpg,Grace Hamilton,articles/new-w4,"payroll,w4,taxes",published
+How Financial Services Compete in a Content-Driven World,fin-serv.html,article-3-financial-services.jpg,Margaret Hopper,articles/financial-services-compete,"content,omni-channel",review
