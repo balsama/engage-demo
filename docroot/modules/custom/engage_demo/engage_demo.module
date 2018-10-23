@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function engage_demo_module_implements_alter(array &$implementations, $hook) {
+    if ($hook === 'layout_alter') {
+        unset($implementations['panels']);
+    }
+}
