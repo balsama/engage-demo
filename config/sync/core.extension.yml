@@ -21,6 +21,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   embed: 0
+  engage_demo: 0
   engage_demo_content: 0
   entity_block: 0
   entity_browser: 0
