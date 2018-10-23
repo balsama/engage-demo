@@ -1,0 +1,8 @@
+#drupal-off-canvas .ui-autocomplete li,
+#drupal-off-canvas .ui-autocomplete li a {
+    background-color: #fff;
+}
+#drupal-off-canvas .ui-autocomplete li:hover,
+#drupal-off-canvas .ui-autocomplete li:hover a {
+    background-color: #9dcae7;
+}
