@@ -19,6 +19,7 @@ module:
   default_content: 0
   default_content_moderation: 0
   demo_umami_content: 0
+  dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
@@ -47,9 +48,11 @@ module:
   lightning_layout: 0
   lightning_map_block: 0
   lightning_media: 0
+  lightning_media_bulk_upload: 0
+  lightning_media_image: 0
   lightning_media_instagram: 0
-  lightning_media_slideshow: 0
   lightning_media_twitter: 0
+  lightning_media_video: 0
   lightning_scheduler: 0
   lightning_workflow: 0
   link: 0
@@ -91,6 +94,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
+  video_embed_media: 0
   views_infinite_scroll: 0
   views_ui: 0
   workflows: 0

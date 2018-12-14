@@ -1,32 +1,36 @@
-uuid: 29dff5a9-e033-482c-8e2b-89710068fe09
+uuid: 2734b87b-a9f8-4eb1-b95e-c08fc6262a40
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.file.field_media_file
-    - media.type.file
+    - core.entity_form_mode.media.media_browser
+    - field.field.media.video_file.field_media_in_library
+    - field.field.media.video_file.field_media_video_file
+    - media.type.video_file
   module:
+    - content_moderation
     - file
     - path
 _core:
-  default_config_hash: bxDtK8Kt53kictIbCesLVLBG5Kl6nFpGEXpGniiGL78
-id: media.file.default
+  default_config_hash: SaX8ADXzleFFE1voCBwLSjilfmMe2-cLmaf6E3LP6tE
+id: media.video_file.media_browser
 targetEntityType: media
-bundle: file
-mode: default
+bundle: video_file
+mode: media_browser
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
+  field_media_in_library:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
     third_party_settings: {  }
-  field_media_file:
+    region: content
+  field_media_video_file:
+    weight: 1
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    weight: 0
     region: content
   moderation_state:
     type: moderation_state_default
@@ -36,7 +40,7 @@ content:
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -44,7 +48,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -52,16 +56,9 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 100
+    weight: 3
     region: content
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  uid: true

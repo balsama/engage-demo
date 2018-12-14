@@ -1,4 +1,4 @@
-uuid: a753d867-7b06-4585-85c2-5ef5d6f69f89
+uuid: 66508c23-e2b5-4ac4-ac68-84ba031f7cf6
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,12 @@ dependencies:
     - field.storage.media.field_media_in_library
     - media.type.tweet
 _core:
-  default_config_hash: Vu7aDQE5B_ZXzGFirW2FnEkCIVoxEuGQPeVfuk443vI
+  default_config_hash: v1X2Ij37LE-pe8VuML60W07ZiHqE_lxGHnRNFWDggAA
 id: media.tweet.field_media_in_library
 field_name: field_media_in_library
 entity_type: media
 bundle: tweet
-label: 'Save to my media library'
+label: 'Show in media library'
 description: ''
 required: false
 translatable: false
@@ -20,6 +20,6 @@ default_value:
     value: 1
 default_value_callback: ''
 settings:
-  on_label: 'Saved to my media library'
-  off_label: 'Not in my media library'
+  on_label: 'Shown in media library'
+  off_label: 'Hidden in media library'
 field_type: boolean

@@ -1,8 +1,9 @@
-uuid: 3dd97f9c-f109-4dd6-9aed-7a9ef7b969fa
+uuid: d3b1d054-a865-4937-995d-59b29e5777fe
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_media_in_library
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
@@ -30,6 +31,7 @@ content:
     region: content
 hidden:
   created: true
+  field_media_in_library: true
   name: true
   thumbnail: true
   uid: true
