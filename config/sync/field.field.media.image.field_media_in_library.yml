@@ -1,16 +1,16 @@
-uuid: 66508c23-e2b5-4ac4-ac68-84ba031f7cf6
+uuid: 285c1231-498a-4dbf-9d10-cf9b646ef44f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_media_in_library
-    - media.type.tweet
+    - media.type.image
 _core:
-  default_config_hash: v1X2Ij37LE-pe8VuML60W07ZiHqE_lxGHnRNFWDggAA
-id: media.tweet.field_media_in_library
+  default_config_hash: QqUWHOMao_EIpcQnrHnXiLJLlCh79IzJeLVENPa5UBE
+id: media.image.field_media_in_library
 field_name: field_media_in_library
 entity_type: media
-bundle: tweet
+bundle: image
 label: 'Show in media library'
 description: ''
 required: false

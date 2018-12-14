@@ -1,35 +1,42 @@
-uuid: 155e6e73-176b-4fdb-b7c0-e931785937d8
+uuid: b53f7e57-e85a-4a58-96d0-7a931e193e56
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.instagram.embed_code
-    - field.field.media.instagram.field_media_in_library
-    - media.type.instagram
+    - core.entity_form_mode.media.media_browser
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
+    - image.style.medium
+    - media.type.image
   module:
     - content_moderation
+    - image
+    - lightning_media
     - path
 _core:
-  default_config_hash: 59ziPzJNPAqMrCE-SBvcUQxVXORfAJ_tkMlS4sIUAFQ
-id: media.instagram.default
+  default_config_hash: iVmRBD7y3Gmddt29sSx9DwwH6Q4UaROqMu7FLyy_bvQ
+id: media.image.media_browser
 targetEntityType: media
-bundle: instagram
-mode: default
+bundle: image
+mode: media_browser
 content:
-  embed_code:
-    type: string_textarea
-    weight: 0
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_media_in_library:
     type: boolean_checkbox
-    weight: 1
+    weight: 4
     settings:
       display_label: true
     third_party_settings: {  }
+    region: content
+  image:
+    type: image_image
+    weight: 0
+    settings:
+      preview_image_style: medium
+      progress_indicator: throbber
+    third_party_settings:
+      lightning_media:
+        file_links: false
+        remove_button: false
     region: content
   moderation_state:
     type: moderation_state_default
@@ -39,7 +46,7 @@ content:
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -51,11 +58,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  preview:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   status:
     type: boolean_checkbox
     settings:

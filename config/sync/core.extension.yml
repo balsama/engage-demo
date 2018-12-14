@@ -47,14 +47,12 @@ module:
   lightning_layout: 0
   lightning_map_block: 0
   lightning_media: 0
-  lightning_media_instagram: 0
-  lightning_media_slideshow: 0
+  lightning_media_image: 0
   lightning_media_twitter: 0
   lightning_scheduler: 0
   lightning_workflow: 0
   link: 0
   media: 0
-  media_entity_instagram: 0
   media_entity_twitter: 0
   media_library: 0
   menu_ui: 0
@@ -91,6 +89,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
   views_infinite_scroll: 0
   views_ui: 0
   workflows: 0

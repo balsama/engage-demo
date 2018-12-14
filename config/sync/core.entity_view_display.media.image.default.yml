@@ -1,9 +1,11 @@
-uuid: 2079e1af-4fad-4979-b9f8-c2ef78f09d84
+uuid: ac9c5971-c97e-40ed-9fa8-7a4edc83e370
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
     - media.type.image
   module:
     - image
@@ -25,6 +27,8 @@ content:
     region: content
 hidden:
   created: true
+  field_media_in_library: true
+  image: true
   name: true
   thumbnail: true
   uid: true

@@ -1,4 +1,4 @@
-uuid: 4b5caca3-b70a-47e5-9142-12dbc9b39194
+uuid: a2f651c5-160b-4e54-91f3-295c62d837a3
 langcode: en
 status: true
 dependencies:
@@ -391,18 +391,7 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - user.permissions
-      tags:
-        - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.image.default'
-        - 'config:core.entity_view_display.media.instagram.default'
-        - 'config:core.entity_view_display.media.instagram.embedded'
-        - 'config:core.entity_view_display.media.instagram.thumbnail'
-        - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.tweet.default'
-        - 'config:core.entity_view_display.media.tweet.embedded'
-        - 'config:core.entity_view_display.media.tweet.thumbnail'
-        - 'config:core.entity_view_display.media.video.default'
+      tags: {  }
   page:
     display_plugin: page
     id: page
@@ -428,18 +417,7 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - user.permissions
-      tags:
-        - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.image.default'
-        - 'config:core.entity_view_display.media.instagram.default'
-        - 'config:core.entity_view_display.media.instagram.embedded'
-        - 'config:core.entity_view_display.media.instagram.thumbnail'
-        - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.tweet.default'
-        - 'config:core.entity_view_display.media.tweet.embedded'
-        - 'config:core.entity_view_display.media.tweet.thumbnail'
-        - 'config:core.entity_view_display.media.video.default'
+      tags: {  }
   widget:
     display_plugin: page
     id: widget
@@ -566,15 +544,4 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - user.permissions
-      tags:
-        - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.image.default'
-        - 'config:core.entity_view_display.media.instagram.default'
-        - 'config:core.entity_view_display.media.instagram.embedded'
-        - 'config:core.entity_view_display.media.instagram.thumbnail'
-        - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.tweet.default'
-        - 'config:core.entity_view_display.media.tweet.embedded'
-        - 'config:core.entity_view_display.media.tweet.thumbnail'
-        - 'config:core.entity_view_display.media.video.default'
+      tags: {  }
