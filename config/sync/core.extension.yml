@@ -2,6 +2,7 @@ module:
   automated_cron: 0
   bg_image_formatter: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -39,6 +40,7 @@ module:
   jsonapi: 0
   layout_builder: 0
   layout_discovery: 0
+  libraries: 0
   lightning_api: 0
   lightning_core: 0
   lightning_landing_page: 0
@@ -46,6 +48,7 @@ module:
   lightning_map_block: 0
   lightning_media: 0
   lightning_media_instagram: 0
+  lightning_media_slideshow: 0
   lightning_media_twitter: 0
   lightning_scheduler: 0
   lightning_workflow: 0
@@ -53,6 +56,7 @@ module:
   media: 0
   media_entity_instagram: 0
   media_entity_twitter: 0
+  media_library: 0
   menu_ui: 0
   moderation_dashboard: 0
   moderation_sidebar: 0
@@ -77,6 +81,8 @@ module:
   simple_gmap: 0
   simple_oauth: 0
   simple_oauth_extras: 0
+  slick: 0
+  slick_entityreference: 0
   system: 0
   taxonomy: 0
   text: 0
