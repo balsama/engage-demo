@@ -60,12 +60,12 @@ lightning_landing_page: 2.0.0-alpha1
 simple_gmap: 1.4.0
 lightning_map_block: 2.0.0-alpha1
 views_infinite_scroll: 1.5.0
-lightning_media: 3.0.0-alpha1
+lightning_media: 3.1.0
 media_entity_twitter: 2.0.0-alpha2
 lightning_media_twitter: 3.0.0-alpha1
 lightning_scheduler: 3.0.0-alpha1
 entity_browser_block: 1.0.0-alpha1
-lightning_workflow: 3.0.0-alpha1
+lightning_workflow: 3.1.0
 media_entity_instagram: 2.0.0-alpha1
 lightning_media_instagram: 3.0.0-alpha1
 serialization: 8.6.0-alpha1
@@ -93,3 +93,4 @@ panels: 4.3.0
 moderation_dashboard: 1.0.0-alpha1
 default_content_moderation: 1.0.0-beta2
 engage_demo: 0.0.0
+media_library: 8.6.4

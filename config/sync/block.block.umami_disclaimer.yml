@@ -1,0 +1,26 @@
+uuid: d808fab0-5fd5-4cb8-9fa4-b2e0366a856b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - demo_umami_content
+  theme:
+    - umami
+_core:
+  default_config_hash: TeOIzk3V4EhipVpBRgjtyn1BkWloX9v1gYju2zgBx80
+id: umami_disclaimer
+theme: umami
+region: bottom
+weight: 10
+provider: null
+plugin: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
+settings:
+  id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
+  label: 'Umami disclaimer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
