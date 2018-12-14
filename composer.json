@@ -19,15 +19,14 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/config_installer": "1.8.0",
         "drupal/console": "^1.0.2",
-        "drupal/core": "8.6.x-dev#44ddc7b",
         "drupal/default_content": "1.0.0-alpha7",
         "drupal/default_content_moderation": "^1.0@beta",
-        "drupal/file_entity": "^2.0@beta",
+        "drupal/file_entity": "^2.0",
         "drupal/lightning_api": "^2.5",
-        "drupal/lightning_core": "dev-3.x#c55dd07",
-        "drupal/lightning_layout": "2.0.0-alpha3",
-        "drupal/lightning_media": "^3.0",
-        "drupal/lightning_workflow": "dev-3.x#7b0a5110da4df7a6b784a8750d41b6c32d9b6674",
+        "drupal/lightning_core": "3.4",
+        "drupal/lightning_layout": "2.0.0-alpha8",
+        "drupal/lightning_media": "3.2",
+        "drupal/lightning_workflow": "3.1",
         "drupal/moderation_dashboard": "^1.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
@@ -121,24 +120,7 @@
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             },
-            "drupal/core": {
-                "2977587 + 2968500 + 2998862 - Improve block listing in Layout Builder by hiding/moving uncommon block plugins; Change Inline Blocks workflow in layout build to match mocks; The Layout Builder block listing should be filterable":
-                "https://patch-diff.githubusercontent.com/raw/tedbow/drupal/pull/15.patch",
-                "2994909 - Grey out the non-essential parts of the page when adding a new section in Layout Builder":
-                "https://www.drupal.org/files/issues/2018-09-26/2994909-4.patch",
-                "3002608 - Hide contextual links not related to Layout Builder inside sections":
-                "https://www.drupal.org/files/issues/2018-09-26/3002608-2.patch",
-                "2994550 - Filtering block plugins by context is slow":
-                "https://www.drupal.org/files/issues/2018-09-25/2994550-30.patch"
-            }
-        },
-        "patches-ignore": {
-            "drupal/lightning_layout": {
-                "drupal/core": {
-                    "This patch (Improve block listing in Layout Builder by hiding/moving uncommon block plugins) is included in the combined 2977587 + 2968500 + 2998862 patch.":
-                    "https://www.drupal.org/files/issues/2018-08-28/2977587-25.patch"
-                }
-            }
+            "drupal/core": {}
         }
     }
 }
