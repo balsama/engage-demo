@@ -96,3 +96,5 @@ engage_demo: 0.0.0
 media_library: 8.6.4
 lightning_media_image: 3.2.0
 lightning_media_video: 3.2.0
+dropzonejs: 2.0.0-alpha3
+lightning_media_bulk_upload: 3.2.0
