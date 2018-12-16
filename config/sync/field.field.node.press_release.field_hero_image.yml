@@ -1,19 +1,19 @@
-uuid: 09c9327b-653f-405d-9970-3b698d375464
-langcode: und
+uuid: 8c6b85aa-3682-418c-b87f-b5b7ceed3fc8
+langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.image
-    - media.type.image
+    - field.storage.node.field_hero_image
+    - node.type.press_release
   module:
     - image
-id: media.image.image
-field_name: image
-entity_type: media
-bundle: image
-label: Image
+id: node.press_release.field_hero_image
+field_name: field_hero_image
+entity_type: node
+bundle: press_release
+label: 'Hero Image'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -24,11 +24,11 @@ settings:
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: false
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null

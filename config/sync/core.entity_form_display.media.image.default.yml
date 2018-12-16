@@ -1,15 +1,15 @@
-uuid: ca3b80ec-1ac6-48f3-9635-6242a7b62f00
+uuid: ff5b6c74-db87-439a-8d6b-f7e50820a349
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
-    - field.field.media.image.image
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
+    - lightning_media
     - path
 _core:
   default_config_hash: tAax8z9_7i7WAgRobX74gL7X94OcSgGouxiEtMY07Sw
@@ -26,10 +26,21 @@ content:
     third_party_settings: {  }
   field_media_image:
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
       preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - landscape_hero
+        - freeform
+      progress_indicator: throbber
+      crop_types_required: {  }
+      warn_multiple_usages: false
+    third_party_settings:
+      lightning_media:
+        file_links: false
+        remove_button: false
+    type: image_widget_crop
     weight: 0
     region: content
   name:
@@ -64,5 +75,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_media_in_library: true
-  image: true
   moderation_state: true

@@ -1,0 +1,14 @@
+uuid: 71ef9ea8-d40b-4d3c-8310-64ecaeea39ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'Uses 8:3 crop.'
+id: media.hero_image
+label: 'Hero Image'
+targetEntityType: media
+cache: true

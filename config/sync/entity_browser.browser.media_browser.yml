@@ -1,9 +1,12 @@
-uuid: d1dce2aa-bf03-45e3-99ea-8dd5bd1b071e
+uuid: 9fd12758-0f40-4748-b47e-24dea54746fa
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.media
   module:
     - lightning_media
+    - views
 _core:
   default_config_hash: kT3o2OhRMWgZX6kGxRYSsItntaw241e3UwpGCD3RpJE
 name: media_browser
@@ -39,3 +42,13 @@ widgets:
     weight: -9
     label: Upload
     id: file_upload
+  3aa1f7cd-17f3-47cb-acfa-a49c08fd17d5:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: Place
+      auto_select: false
+    uuid: 3aa1f7cd-17f3-47cb-acfa-a49c08fd17d5
+    weight: -10
+    label: Library
+    id: view

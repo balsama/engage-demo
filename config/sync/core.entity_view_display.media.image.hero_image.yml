@@ -1,10 +1,12 @@
-uuid: 3e562249-1cb5-418c-864f-9008694762b1
+uuid: da90bdde-1ff0-4fc8-97fc-b92812a32349
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.hero_image
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
+    - image.style.crop_landscape_hero
     - media.type.image
   module:
     - image
@@ -12,18 +14,20 @@ dependencies:
 third_party_settings:
   layout_builder:
     sections: {  }
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: PaZ7IN5ey3rp2fwE9LXGfW9Piq7oX4piH08FhUTI4lQ
-id: media.image.default
+id: media.image.hero_image
 targetEntityType: media
 bundle: image
-mode: default
+mode: hero_image
 content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: ''
-      image_link: file
+      image_style: crop_landscape_hero
+      image_link: ''
     third_party_settings: {  }
     type: image
     weight: 1

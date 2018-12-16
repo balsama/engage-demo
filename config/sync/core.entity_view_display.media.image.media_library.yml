@@ -1,4 +1,4 @@
-uuid: d8783be8-481b-442d-9bd5-fd088c522938
+uuid: 4e40bb33-47d7-4483-a6e7-f1ae1b4afba3
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
-    - field.field.media.image.image
     - image.style.thumbnail
     - media.type.image
   module:
@@ -31,6 +30,5 @@ hidden:
   created: true
   field_media_image: true
   field_media_in_library: true
-  image: true
   name: true
   uid: true
