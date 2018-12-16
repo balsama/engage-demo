@@ -1,10 +1,12 @@
-uuid: 064317f3-22a8-41ad-8bf0-59ecc1334614
+uuid: 25f81f37-6474-41ce-90b5-bbd5a3e2ecbc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_media_in_library
     - media.type.image
+_core:
+  default_config_hash: QqUWHOMao_EIpcQnrHnXiLJLlCh79IzJeLVENPa5UBE
 id: media.image.field_media_in_library
 field_name: field_media_in_library
 entity_type: media
@@ -12,7 +14,7 @@ bundle: image
 label: 'Show in media library'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1

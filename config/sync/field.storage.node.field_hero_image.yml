@@ -1,19 +1,14 @@
-uuid: 31bd701b-4bc7-434b-9226-10f4079bde25
+uuid: e6577219-fc33-4868-96e1-0c0f0abeb123
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - media
   module:
     - file
     - image
-    - media
-_core:
-  default_config_hash: 7ZBrcl87ZXaw42v952wwcw_9cQgTBq5_5tgyUkE-VV0
-id: media.field_media_image
-field_name: field_media_image
-entity_type: media
+    - node
+id: node.field_hero_image
+field_name: field_hero_image
+entity_type: node
 type: image
 settings:
   uri_scheme: public

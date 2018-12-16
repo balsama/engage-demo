@@ -29,3 +29,4 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  field_hero_image: true

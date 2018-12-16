@@ -1,59 +1,32 @@
-uuid: b2500fb4-d522-4606-9c6a-f4ba649f3c26
+uuid: 3e562249-1cb5-418c-864f-9008694762b1
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
-    - image.style.thumbnail
     - media.type.image
   module:
     - image
-    - layout_builder
-    - user
-third_party_settings:
-  layout_builder:
-    sections: {  }
+_core:
+  default_config_hash: PaZ7IN5ey3rp2fwE9LXGfW9Piq7oX4piH08FhUTI4lQ
 id: media.image.default
 targetEntityType: media
 bundle: image
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 0
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   field_media_image:
-    weight: 6
-    label: above
+    label: visually_hidden
     settings:
       image_style: ''
-      image_link: ''
+      image_link: file
     third_party_settings: {  }
     type: image
+    weight: 1
     region: content
-  thumbnail:
-    type: image
-    weight: 5
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    region: content
-    third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  created: true
   field_media_in_library: true
   name: true
+  thumbnail: true
+  uid: true

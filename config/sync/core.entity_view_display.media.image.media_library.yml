@@ -1,20 +1,20 @@
-uuid: 58018df1-29d2-4582-b71b-39c8dade8374
+uuid: 4e40bb33-47d7-4483-a6e7-f1ae1b4afba3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.tweet.embed_code
-    - field.field.media.tweet.field_media_in_library
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
     - image.style.thumbnail
-    - media.type.tweet
+    - media.type.image
   module:
     - image
 _core:
-  default_config_hash: VTsBksl8WpXfyee2ZCWKhunXQJP0sszeZuOxjjaLxk0
-id: media.tweet.media_library
+  default_config_hash: d6MgCTaBTH2Dv39QU95kaw5Qdt82P0MRcJbh00SSOmg
+id: media.image.media_library
 targetEntityType: media
-bundle: tweet
+bundle: image
 mode: media_library
 content:
   thumbnail:
@@ -28,7 +28,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  embed_code: true
+  field_media_image: true
   field_media_in_library: true
   name: true
   uid: true

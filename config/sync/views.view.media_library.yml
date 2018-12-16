@@ -1,4 +1,4 @@
-uuid: a2f651c5-160b-4e54-91f3-295c62d837a3
+uuid: 322f8926-e5e9-4d62-97ff-6f5de7c0a0bc
 langcode: en
 status: true
 dependencies:
@@ -29,9 +29,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access media overview'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -390,8 +389,11 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.embedded'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image.thumbnail'
   page:
     display_plugin: page
     id: page
@@ -416,8 +418,11 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.embedded'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image.thumbnail'
   widget:
     display_plugin: page
     id: widget
@@ -544,4 +549,8 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.embedded'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image.thumbnail'

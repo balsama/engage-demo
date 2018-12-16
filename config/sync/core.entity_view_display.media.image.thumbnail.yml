@@ -1,0 +1,23 @@
+uuid: 85ab37f4-4ec8-44ca-b519-e9b71c14d19d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.thumbnail
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - media.type.image
+_core:
+  default_config_hash: Gb3qN_HZzqfFf4728OIYBwnMVryxUzlsWkmOY56idC8
+id: media.image.thumbnail
+targetEntityType: media
+bundle: image
+mode: thumbnail
+content: {  }
+hidden:
+  created: true
+  field_media_image: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true
