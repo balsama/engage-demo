@@ -3,7 +3,11 @@ langcode: und
 status: true
 dependencies:
   module:
+    - crop
     - media_entity_twitter
+third_party_settings:
+  crop:
+    image_field: null
 _core:
   default_config_hash: JJfzQKRxzJtlEzDVMBiB9pz9RAilNURCbnSgFrHJUxw
 id: tweet
@@ -15,7 +19,7 @@ new_revision: false
 source_configuration:
   source_field: embed_code
   use_twitter_api: false
-  generate_thumbnails: false
+  generate_thumbnails: true
   consumer_key: ''
   consumer_secret: ''
   oauth_access_token: ''
