@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.press_release.body
     - field.field.node.press_release.field_hero_image
+    - image.style.crop_landscape_hero
     - node.type.press_release
   module:
     - image
@@ -22,15 +23,15 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   field_hero_image:
-    weight: 3
+    weight: 2
     label: above
     settings:
-      image_style: ''
+      image_style: crop_landscape_hero
       image_link: ''
     third_party_settings: {  }
     type: image

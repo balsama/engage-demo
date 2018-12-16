@@ -1,0 +1,17 @@
+uuid: 74178ba7-9e32-4498-95d7-f541b9023541
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.landscape_hero
+  module:
+    - crop
+name: crop_landscape_hero
+label: 'Cropped: Landscape Hero'
+effects:
+  dfe52f80-1e50-4efd-81fa-f2f7ca6c0faf:
+    uuid: dfe52f80-1e50-4efd-81fa-f2f7ca6c0faf
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: landscape_hero

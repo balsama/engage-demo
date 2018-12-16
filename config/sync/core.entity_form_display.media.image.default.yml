@@ -8,7 +8,8 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
+    - lightning_media
     - path
 _core:
   default_config_hash: tAax8z9_7i7WAgRobX74gL7X94OcSgGouxiEtMY07Sw
@@ -25,10 +26,21 @@ content:
     third_party_settings: {  }
   field_media_image:
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
       preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - landscape_hero
+        - freeform
+      progress_indicator: throbber
+      crop_types_required: {  }
+      warn_multiple_usages: false
+    third_party_settings:
+      lightning_media:
+        file_links: false
+        remove_button: false
+    type: image_widget_crop
     weight: 0
     region: content
   name:
