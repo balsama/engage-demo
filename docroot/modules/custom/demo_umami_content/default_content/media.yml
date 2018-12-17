@@ -2,11 +2,26 @@ Flower shop owner:
   name: Flower shop owner
   alt: Flower shop owner outside their store
   filename: article-1-fin.jpg
+  crop:
+    height: 769
+    width: 2050
+    x: 1025
+    y: 918
 Pay with phone and device:
   name: Pay with phone and device
   alt: Transaction with phone
   filename: article-2-irs.jpg
+  crop:
+      height: 719
+      width: 1916
+      x: 1160
+      y: 764
 Pay with two phones:
   name: Pay with two phones
   alt: Use a phone to send and receive payments
   filename: article-3-financial-services.jpg
+  crop:
+      height: 767
+      width: 2045
+      x: 1023
+      y: 881

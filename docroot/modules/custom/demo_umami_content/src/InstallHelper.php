@@ -260,8 +260,25 @@ class InstallHelper implements ContainerInjectionInterface {
 
       $media = $this->entityTypeManager->getStorage('media')->create($values);
       $media->save();
-      $uuids[$media->uuid()] = 'node';
+      $uuids[$media->uuid()] = 'media';
+
+      // Save a hero crop for each of the images so that they can be easily
+      // used as a hero image on Press Releases.
+      $crop_values = [
+        'type' => 'landscape_hero',
+        'uri' => 'public://' . $media_item['filename'],
+        'height' => $media_item['crop']['height'],
+        'width' => $media_item['crop']['width'],
+        'x' => $media_item['crop']['x'],
+        'y' => $media_item['crop']['y'],
+      ];
+      $crop = $this->entityTypeManager->getStorage('crop')->create($crop_values);
+      $crop->save();
+      $uuids[$media->uuid()] = 'crop';
     }
+
+    $crop = $this->entityTypeManager->getStorage('crop')->create($crop_values);
+    $crop->save();
 
     $this->storeCreatedContentUuids($uuids);
     return $this;
