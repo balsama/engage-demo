@@ -18,10 +18,10 @@ queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
   source_field: embed_code
-  use_twitter_api: false
+  use_twitter_api: true
   generate_thumbnails: true
-  consumer_key: ''
-  consumer_secret: ''
-  oauth_access_token: ''
-  oauth_access_token_secret: ''
+  consumer_key: pz5HfYi6QmMk9aKDBZrSA
+  consumer_secret: GsOpvbRkRPDurv9ZMXLridGi3lMRebkMMZAPswsBaAM
+  oauth_access_token: 30140693-5y7ujX3MYXdYyr6GUqm7CQT3n3h3NVN9yI3WKe69J
+  oauth_access_token_secret: AW6CyBjbgLb6GidC0RzC36FzewuhDce7m77ZqTnksDh02
 field_map: {  }
