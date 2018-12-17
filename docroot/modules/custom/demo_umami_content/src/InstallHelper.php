@@ -8,6 +8,7 @@ use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Path\AliasManagerInterface;
 use Drupal\Core\State\StateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\Yaml\Yaml;
 use Drupal\Component\Utility\Html;
 
 /**
@@ -85,7 +86,8 @@ class InstallHelper implements ContainerInjectionInterface {
       ->importArticles()
       ->importPressReleases()
       ->importPages()
-      ->importBlockContent();
+      ->importBlockContent()
+      ->importMedia();
   }
 
   /**
@@ -230,6 +232,38 @@ class InstallHelper implements ContainerInjectionInterface {
       $this->storeCreatedContentUuids($uuids);
       fclose($handle);
     }
+    return $this;
+  }
+
+  /**
+   * Creates media items.
+   *
+   * @return $this
+   */
+  protected function importMedia() {
+    $uuids = [];
+    $module_path = $this->moduleHandler->getModule('demo_umami_content')->getPath();
+
+    $media = Yaml::parse(file_get_contents($module_path . '/default_content/media.yml'));
+
+    foreach ($media as $media_item) {
+      $values = [
+        'bundle' => 'image',
+        'name' => $media_item['name'],
+        'moderation_state' => 'published',
+      ];
+      $path = $module_path . '/default_content/images/' . $media_item['filename'];
+      $values['field_media_image'] = [
+        'target_id' => $this->createFileEntity($path),
+        'alt' => $media_item['alt'],
+      ];
+
+      $media = $this->entityTypeManager->getStorage('media')->create($values);
+      $media->save();
+      $uuids[$media->uuid()] = 'node';
+    }
+
+    $this->storeCreatedContentUuids($uuids);
     return $this;
   }
 
