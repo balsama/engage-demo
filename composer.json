@@ -25,7 +25,7 @@
         "drupal/lightning_api": "^2.5",
         "drupal/lightning_core": "3.4",
         "drupal/lightning_layout": "2.0.0-alpha8",
-        "drupal/lightning_media": "3.2",
+        "drupal/lightning_media": "^3.4",
         "drupal/lightning_workflow": "3.1",
         "drupal/moderation_dashboard": "^1.0@alpha",
         "drush/drush": "^9.0.0",

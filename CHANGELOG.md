@@ -6,3 +6,4 @@
 * Create default media image content on install
 * Added Twitter API dev account details to generate tweet thumbnails.
 * Updated core to 8.6.5
+* Updated Lightning to core to 3.4
