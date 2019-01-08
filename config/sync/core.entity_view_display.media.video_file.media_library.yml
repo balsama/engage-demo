@@ -6,10 +6,14 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.video_file.field_media_in_library
     - field.field.media.video_file.field_media_video_file
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.video_file
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: P76hMUHIX6T5zAfAt_XOwR8uWGq9jBJbsP5ZDmIGp-o
 id: media.video_file.media_library
@@ -23,7 +27,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:

@@ -6,10 +6,14 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.tweet.embed_code
     - field.field.media.tweet.field_media_in_library
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.tweet
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: VTsBksl8WpXfyee2ZCWKhunXQJP0sszeZuOxjjaLxk0
 id: media.tweet.media_library
@@ -23,7 +27,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:

@@ -6,10 +6,14 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.instagram.embed_code
     - field.field.media.instagram.field_media_in_library
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.instagram
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: H1EgOkDqYIIvR7cxkNnfvTbc95tFI_HwDu5rm7LdhNI
 id: media.instagram.media_library
@@ -23,7 +27,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:

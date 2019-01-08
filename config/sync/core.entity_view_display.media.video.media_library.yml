@@ -7,10 +7,14 @@ dependencies:
     - field.field.media.video.field_media_in_library
     - field.field.media.video.field_media_video_embed_field
     - field.field.media.video.field_media_video_file
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.video
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: GPhwhLND4sxODo0Ytg721jxRMJhiqVCam6qUq4927U8
 id: media.video.media_library
@@ -24,7 +28,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:

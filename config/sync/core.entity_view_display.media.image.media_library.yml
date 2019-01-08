@@ -6,10 +6,14 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.image
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: d6MgCTaBTH2Dv39QU95kaw5Qdt82P0MRcJbh00SSOmg
 id: media.image.media_library
@@ -23,7 +27,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:
