@@ -39,7 +39,8 @@ install:
   # Build the code base from the lock file.
   - composer install
   # Install the demo cleanly so that settings.php will be created properly.
-  - composer setup
+  #- composer setup
+  - php docroot/core/scripts/drupal install config_installer --no-interaction -vvv
 
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
