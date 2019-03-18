@@ -54,6 +54,7 @@ module:
   lightning_media: 0
   lightning_media_image: 0
   lightning_media_instagram: 0
+  lightning_media_slideshow: 0
   lightning_media_twitter: 0
   lightning_media_video: 0
   lightning_scheduler: 0
