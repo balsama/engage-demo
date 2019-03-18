@@ -42,7 +42,9 @@ module:
   inline_entity_form: 0
   jsonapi: 0
   layout_builder: 0
+  layout_builder_restrictions: 0
   layout_discovery: 0
+  layout_library: 0
   libraries: 0
   lightning_api: 0
   lightning_core: 0

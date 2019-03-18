@@ -1,12 +1,12 @@
-uuid: cb6ab700-e4ff-41a4-861f-2ae77bcfcb6d
+uuid: a98370b2-c0ca-41b5-af52-bd15b5d8964f
 langcode: en
 status: true
 dependencies: {  }
 name: media_library
 label: 'Media Library (220x220)'
 effects:
-  a9e27ae6-6665-4580-803a-af69ab58ee97:
-    uuid: a9e27ae6-6665-4580-803a-af69ab58ee97
+  05534455-9408-4f5e-bd75-a0506408b564:
+    uuid: 05534455-9408-4f5e-bd75-a0506408b564
     id: image_scale
     weight: 0
     data:
