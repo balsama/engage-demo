@@ -84,3 +84,4 @@ type_settings:
       - landing_page
       - page
       - press_release
+  default_moderation_state: draft

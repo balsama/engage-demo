@@ -1,4 +1,4 @@
-uuid: 9fd12758-0f40-4748-b47e-24dea54746fa
+uuid: afc4aea4-6e80-4b14-8bc9-180d014e512f
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
 _core:
   default_config_hash: kT3o2OhRMWgZX6kGxRYSsItntaw241e3UwpGCD3RpJE
-name: media_browser
-label: 'Media browser'
-display: modal
+name: ckeditor_media_browser
+label: 'Media browser (CKEditor)'
+display: iframe
 display_configuration:
-  width: ''
-  height: ''
-  link_text: 'Add media'
-  auto_open: false
+  width: 100%
+  height: '640'
+  link_text: 'Select entities'
+  auto_open: true
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: tabs

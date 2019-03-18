@@ -8,7 +8,6 @@ dependencies:
     - field.field.block_content.hero.field_hero_image
     - image.style.thumbnail
   module:
-    - content_moderation
     - image
     - text
 _core:
@@ -42,11 +41,5 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    settings: {  }
-    region: content
     third_party_settings: {  }
 hidden: {  }

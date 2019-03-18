@@ -5,8 +5,6 @@ dependencies:
   config:
     - block_content.type.google_map
     - field.field.block_content.google_map.field_map_location
-  module:
-    - content_moderation
 _core:
   default_config_hash: FfyNPH7IUb9gQuPEg1lFzHvGMmY8sLx1JHLceBeLqvU
 id: block_content.google_map.default
@@ -29,11 +27,5 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    settings: {  }
-    region: content
     third_party_settings: {  }
 hidden: {  }
