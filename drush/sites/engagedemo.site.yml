@@ -1,0 +1,48 @@
+# Application 'engagedemo', environment 'dev'.
+dev:
+  root: /var/www/html/engagedemo.dev/docroot
+  ac-site: engagedemo
+  ac-env: dev
+  ac-realm: devcloud
+  uri: engagedemof44xea2lhe.devcloud.acquia-sites.com
+  dev.livedev:
+    parent: '@engagedemo.dev'
+    root: /mnt/gfs/engagedemo.dev/livedev/docroot
+  host: engagedemof44xea2lhe.ssh.devcloud.acquia-sites.com
+  user: engagedemo.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'engagedemo', environment 'prod'.
+prod:
+  root: /var/www/html/engagedemo.prod/docroot
+  ac-site: engagedemo
+  ac-env: prod
+  ac-realm: devcloud
+  uri: engagedemon9r8txkdsy.devcloud.acquia-sites.com
+  prod.livedev:
+    parent: '@engagedemo.prod'
+    root: /mnt/gfs/engagedemo.prod/livedev/docroot
+  host: engagedemon9r8txkdsy.ssh.devcloud.acquia-sites.com
+  user: engagedemo.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'engagedemo', environment 'test'.
+test:
+  root: /var/www/html/engagedemo.test/docroot
+  ac-site: engagedemo
+  ac-env: test
+  ac-realm: devcloud
+  uri: engagedemokksecgvwvg.devcloud.acquia-sites.com
+  test.livedev:
+    parent: '@engagedemo.test'
+    root: /mnt/gfs/engagedemo.test/livedev/docroot
+  host: engagedemokksecgvwvg.ssh.devcloud.acquia-sites.com
+  user: engagedemo.test
+  paths:
+    drush-script: drush9
+
+

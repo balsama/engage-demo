@@ -27,7 +27,7 @@
         "drupal/lightning_layout": "2.0.0-alpha11",
         "drupal/lightning_media": "3.8",
         "drupal/lightning_workflow": "3.5",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "<9.6.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
