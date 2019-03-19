@@ -3,7 +3,11 @@ langcode: und
 status: true
 dependencies:
   module:
+    - crop
     - media_entity_instagram
+third_party_settings:
+  crop:
+    image_field: null
 _core:
   default_config_hash: TKhdB_RfDh650Ek88BYOONs44QmJbbQGAEETcF-CEjo
 id: instagram

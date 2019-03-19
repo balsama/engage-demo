@@ -1,4 +1,5 @@
 module:
+  acquia_connector: 0
   automated_cron: 0
   bg_image_formatter: 0
   big_pipe: 0
@@ -17,15 +18,11 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  default_content: 0
-  default_content_moderation: 0
   demo_umami_content: 0
   dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
-  engage_demo: 0
-  engage_demo_content: 0
   entity_block: 0
   entity_browser: 0
   entity_browser_block: 0
@@ -42,7 +39,9 @@ module:
   inline_entity_form: 0
   jsonapi: 0
   layout_builder: 0
+  layout_builder_restrictions: 0
   layout_discovery: 0
+  layout_library: 0
   libraries: 0
   lightning_api: 0
   lightning_core: 0
@@ -52,6 +51,7 @@ module:
   lightning_media: 0
   lightning_media_image: 0
   lightning_media_instagram: 0
+  lightning_media_slideshow: 0
   lightning_media_twitter: 0
   lightning_media_video: 0
   lightning_scheduler: 0

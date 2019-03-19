@@ -22,13 +22,12 @@
         "drupal/default_content": "1.0.0-alpha7",
         "drupal/default_content_moderation": "^1.0@beta",
         "drupal/file_entity": "^2.0",
-        "drupal/lightning_api": "^2.5",
-        "drupal/lightning_core": "3.4",
-        "drupal/lightning_layout": "2.0.0-alpha8",
-        "drupal/lightning_media": "3.2",
-        "drupal/lightning_workflow": "3.1",
-        "drupal/moderation_dashboard": "^1.0@alpha",
-        "drush/drush": "^9.0.0",
+        "drupal/lightning_api": "3.5",
+        "drupal/lightning_core": "^4.0",
+        "drupal/lightning_layout": "2.0.0-alpha11",
+        "drupal/lightning_media": "3.8",
+        "drupal/lightning_workflow": "3.5",
+        "drush/drush": "<9.6.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
@@ -71,8 +70,7 @@
             "@composer refresh-content"
         ],
         "refresh-content": [
-            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
-            "drush default-content-moderation-import"
+            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content"
         ],
         "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
@@ -120,7 +118,10 @@
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             },
-            "drupal/core": {}
+            "drupal/core": {
+                "Remove hook_install from Umami demo profile":
+                "./patches/umami-hook-install.patch"
+            }
         }
     }
 }
