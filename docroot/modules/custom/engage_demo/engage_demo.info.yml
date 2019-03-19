@@ -1,5 +1,0 @@
-name: 'Engage Demo'
-type: module
-description: 'Tweaks for the Engage Demo'
-core: 8.x
-package: 'Custom'

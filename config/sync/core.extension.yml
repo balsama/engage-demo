@@ -17,15 +17,12 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  default_content: 0
-  default_content_moderation: 0
   demo_umami_content: 0
   dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
   engage_demo: 0
-  engage_demo_content: 0
   entity_block: 0
   entity_browser: 0
   entity_browser_block: 0

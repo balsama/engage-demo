@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9972612e4a7bc3fe8e42e93c3ec0e0fd",
+    "content-hash": "380ed446042cd6900ccc9574ba50b063",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2879,6 +2879,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "3038668 - Fix tests following a change in Drupal 8.7.0: #2976035": "https://www.drupal.org/files/issues/2019-03-10/3038668-25.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3132,6 +3135,7 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
+                    "Remove hook_install from Umami demo profile": "./patches/umami-hook-install.patch",
                     "2998335 - [regression] \\Drupal\\user\\ContextProvider\\CurrentUserContext broken for anonymous users": "https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
@@ -5716,6 +5720,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3030976 - Panels should check if there is an icon map before setting the no preview icon": "https://www.drupal.org/files/issues/2019-02-06/initial.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

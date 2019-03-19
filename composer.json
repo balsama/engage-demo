@@ -70,8 +70,7 @@
             "@composer refresh-content"
         ],
         "refresh-content": [
-            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content",
-            "drush default-content-moderation-import"
+            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content"
         ],
         "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
@@ -119,7 +118,10 @@
                 "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
                 "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
             },
-            "drupal/core": {}
+            "drupal/core": {
+                "Remove hook_install from Umami demo profile":
+                "./patches/umami-hook-install.patch"
+            }
         }
     }
 }
