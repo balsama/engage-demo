@@ -1,4 +1,5 @@
 module:
+  acquia_connector: 0
   automated_cron: 0
   bg_image_formatter: 0
   big_pipe: 0
@@ -22,6 +23,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   embed: 0
+  engage_demo: 0
   entity_block: 0
   entity_browser: 0
   entity_browser_block: 0

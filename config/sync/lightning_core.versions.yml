@@ -104,3 +104,4 @@ video_embed_media: 2.0.0
 layout_library: 1.0.0-alpha2
 layout_builder_restrictions: 1.4.0
 lightning_media_slideshow: 3.8.0
+acquia_connector: 1.16.0
