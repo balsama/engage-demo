@@ -86,6 +86,7 @@ class InstallHelper implements ContainerInjectionInterface {
       ->importArticles()
       ->importPressReleases()
       ->importPages()
+      ->createLandingPage()
       ->importBlockContent()
       ->importMedia();
   }
@@ -324,6 +325,22 @@ class InstallHelper implements ContainerInjectionInterface {
       $this->storeCreatedContentUuids($uuids);
       fclose($handle);
     }
+    return $this;
+  }
+
+  protected function createLandingPage() {
+    $values = [
+      'type' => 'landing_page',
+      'title' => 'Special Offer',
+      'moderation_state' => 'draft',
+      'body' => 'This is a special offer for our loyal customers.',
+      'path' => ['alias' => '/special-offer'],
+      'uid' => 'Grace Hamilton',
+    ];
+    $node = $this->entityTypeManager->getStorage('node')->create($values);
+    $node->save();
+    $uuids[$node->uuid()] = 'node';
+    $this->storeCreatedContentUuids($uuids);
     return $this;
   }
 

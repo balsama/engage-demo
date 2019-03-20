@@ -120,7 +120,9 @@
             },
             "drupal/core": {
                 "Remove hook_install from Umami demo profile":
-                "./patches/umami-hook-install.patch"
+                "./patches/umami-hook-install.patch",
+                "2959493: Allow Layout Builder live previews to be toggled to allow easier drag-and-drop":
+                "https://www.drupal.org/files/issues/2019-03-19/2959493-121.patch"
             }
         }
     }
