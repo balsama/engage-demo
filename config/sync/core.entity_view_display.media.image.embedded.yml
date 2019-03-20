@@ -6,17 +6,28 @@ dependencies:
     - core.entity_view_mode.media.embedded
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_in_library
+    - image.style.medium_3_2_2x
     - media.type.image
+  module:
+    - image
 _core:
   default_config_hash: FaHkkj9J9DxKQ-R7RNddSDq_d0D6UBY3hoKzoAQoGaw
 id: media.image.embedded
 targetEntityType: media
 bundle: image
 mode: embedded
-content: {  }
+content:
+  field_media_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium_3_2_2x
+      image_link: ''
+    third_party_settings: {  }
 hidden:
   created: true
-  field_media_image: true
   field_media_in_library: true
   name: true
   thumbnail: true
