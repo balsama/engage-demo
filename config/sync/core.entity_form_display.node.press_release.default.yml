@@ -6,6 +6,7 @@ dependencies:
     - entity_browser.browser.image_browser
     - field.field.node.press_release.body
     - field.field.node.press_release.field_hero_image
+    - field.field.node.press_release.layout_selection
     - node.type.press_release
     - workflows.workflow.editorial
   module:
@@ -46,6 +47,12 @@ content:
       field_widget_replace: false
       selection_mode: selection_append
     region: content
+    third_party_settings: {  }
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 26
+    settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default

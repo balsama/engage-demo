@@ -1,0 +1,21 @@
+uuid: ce1ab89d-9b1f-4eb8-9957-63e53cdad884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_selection
+    - node.type.press_release
+id: node.press_release.layout_selection
+field_name: layout_selection
+entity_type: node
+bundle: press_release
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

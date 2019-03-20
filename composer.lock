@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c060f3480db8d069f8d7c62eedd34773",
+    "content-hash": "8f0af30f602ca917b7b0e4f899deae95",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4154,6 +4154,7 @@
                     }
                 },
                 "patches_applied": {
+                    "3041763: Unable to place blocks in Layout Library Layout": "https://www.drupal.org/files/issues/2019-03-20/3041763-3.patch",
                     "3032933 - Bad schema for allowed layouts": "https://www.drupal.org/files/issues/2019-02-14/3032933-2.patch"
                 }
             },

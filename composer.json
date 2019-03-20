@@ -123,6 +123,10 @@
                 "./patches/umami-hook-install.patch",
                 "2959493: Allow Layout Builder live previews to be toggled to allow easier drag-and-drop":
                 "https://www.drupal.org/files/issues/2019-03-19/2959493-121.patch"
+            },
+            "drupal/layout_builder_restrictions": {
+                "3041763: Unable to place blocks in Layout Library Layout":
+                "https://www.drupal.org/files/issues/2019-03-20/3041763-3.patch"
             }
         }
     }

@@ -1,0 +1,45 @@
+uuid: 0cfceaab-1a0a-423a-9785-8adb41cdca76
+langcode: en
+status: true
+dependencies: {  }
+id: disclaimer
+label: Disclaimer
+targetEntityType: node
+targetBundle: press_release
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings: {  }
+    components:
+      4148a188-c4d4-40b2-9e1b-c3fc9a2c4a11:
+        uuid: 4148a188-c4d4-40b2-9e1b-c3fc9a2c4a11
+        region: content
+        configuration:
+          id: 'field_block:node:press_release:body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 3
+      516e1a19-08ae-49e5-86e1-20ad51dfe3df:
+        uuid: 516e1a19-08ae-49e5-86e1-20ad51dfe3df
+        region: content
+        configuration:
+          id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
+          label: 'B&B disclaimer'
+          provider: block_content
+          label_display: visible
+          status: true
+          info: ''
+          view_mode: full
+          context_mapping: {  }
+        additional: {  }
+        weight: 4
+    third_party_settings: {  }
