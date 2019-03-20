@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "201eaacee28c4946c9cd8b66e50602d4",
+    "content-hash": "c060f3480db8d069f8d7c62eedd34773",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2981,6 +2981,7 @@
                 },
                 "patches_applied": {
                     "Remove hook_install from Umami demo profile": "./patches/umami-hook-install.patch",
+                    "2959493: Allow Layout Builder live previews to be toggled to allow easier drag-and-drop": "https://www.drupal.org/files/issues/2019-03-19/2959493-121.patch",
                     "2998335 - [regression] \\Drupal\\user\\ContextProvider\\CurrentUserContext broken for anonymous users": "https://www.drupal.org/files/issues/2018-10-04/2998335-currentusercontext-16.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2885441 - EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
