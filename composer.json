@@ -121,8 +121,14 @@
             "drupal/core": {
                 "Remove hook_install from Umami demo profile":
                 "./patches/umami-hook-install.patch",
+                "2995689: Allow reordering blocks without a pointer device":
+                "https://www.drupal.org/files/issues/2019-03-20/2995689-112.patch",
                 "2959493: Allow Layout Builder live previews to be toggled to allow easier drag-and-drop":
-                "https://www.drupal.org/files/issues/2019-03-19/2959493-121.patch"
+                "https://www.drupal.org/files/issues/2019-03-20/2959493-126.patch",
+                "2988970: Layout Builder should make it easier to modify the default layout for an entity type when viewing an entity":
+                "https://www.drupal.org/files/issues/2019-02-28/2988970-54.patch",
+                "2938182: Design intuitive affordances for Layout Builder (for illustrating which parts of the page are editable in a given context)":
+                "https://www.drupal.org/files/issues/2019-02-27/2938182-27.patch"
             },
             "drupal/layout_builder_restrictions": {
                 "3041763: Unable to place blocks in Layout Library Layout":
