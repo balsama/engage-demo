@@ -1,4 +1,4 @@
-uuid: cc43a78c-0c30-497d-93e9-601b45e5e1e8
+uuid: 75512ebc-9835-4875-81bb-75011f09e53c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: 1UIjNd6iIhogbx50cJPDN7Me8cUQx2xCP2IBgrKG6Ms
+  default_config_hash: epCHwxXumnS0FQR7duKz2_r2nkW5CJxTracGsaPMuzE
 id: moderated_content
 label: 'Moderated content'
 module: views
@@ -508,9 +508,8 @@ display:
       filters:
         latest_translation_affected_revision:
           id: latest_translation_affected_revision
-          field: latest_translation_affected_revision
-          plugin_id: latest_translation_affected_revision
           table: node_revision
+          field: latest_translation_affected_revision
           relationship: none
           group_type: group
           admin_label: ''
@@ -543,6 +542,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
+          plugin_id: latest_translation_affected_revision
         title:
           id: title
           table: node_field_revision
@@ -792,7 +792,7 @@ display:
         groups:
           1: AND
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -800,8 +800,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:workflow_list'
+      tags: {  }
   moderated_content:
     display_plugin: page
     id: moderated_content
@@ -812,7 +811,7 @@ display:
       path: admin/content/moderated
       display_description: ''
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -820,5 +819,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:workflow_list'
+      tags: {  }

@@ -1,15 +1,14 @@
-uuid: 9f014570-2ee8-471c-b76a-7a7c59ce7e9c
+uuid: 0780d039-7879-44f0-a086-16cf9a781cd5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.video.field_media_in_library
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
     - file
 _core:
-  default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
+  default_config_hash: NPLHs4yOK575ZFCLgxBlMJj_Pf1UkYgMPmZG9DVwZ_o
 id: media.video.default
 targetEntityType: media
 bundle: video
@@ -31,8 +30,7 @@ content:
     region: content
 hidden:
   created: true
-  field_media_in_library: true
-  field_media_video_embed_field: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

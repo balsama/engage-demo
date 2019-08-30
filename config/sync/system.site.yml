@@ -1,7 +1,7 @@
-uuid: dc877f9e-c465-41d8-8cc3-66b87b61085a
-name: 'Bread & Butter'
+uuid: 0baee6cf-b72b-44c4-ba0e-9b3e905f0aab
+name: 'Drush Site-Install'
 mail: admin@example.com
-slogan: 'Balancing the books is our bread & butter.'
+slogan: ''
 page:
   403: ''
   404: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

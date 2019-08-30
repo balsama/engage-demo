@@ -1,4 +1,4 @@
-uuid: 3ab365c2-32b5-4e4b-8a8a-f4cf0d2e6b61
+uuid: 80fef402-ee8f-4f72-97bf-b1c7a7894a75
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: _L_3i_Js9-dZMLX2RRJqeryWzABKXwF4PS3Kss1kqQ0
+  default_config_hash: xQrNNdbWnAkULFqNm5BSPy2Sewz60A3Rqyz7d4Bnjb8
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -50,3 +50,4 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  langcode: true

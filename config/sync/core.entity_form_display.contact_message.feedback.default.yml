@@ -1,11 +1,11 @@
-uuid: a67d58b3-4215-4e55-8f3d-e999bcc82003
+uuid: 7fe64507-963d-4405-978c-1020cc9b4d04
 langcode: en
 status: true
 dependencies:
   config:
     - contact.form.feedback
 _core:
-  default_config_hash: vH_AF8I63rYq7b-9IZyopPGkYA8V02w_tOwQv7Rf7Pg
+  default_config_hash: JVODBpCr7cbobFtZtw0loyOblfN77ajUJz092OhvXic
 id: contact_message.feedback.default
 targetEntityType: contact_message
 bundle: feedback
@@ -15,6 +15,13 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   mail:
     weight: 1

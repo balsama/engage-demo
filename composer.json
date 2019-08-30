@@ -17,16 +17,11 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/config_installer": "1.8.0",
-        "drupal/console": "^1.0.2",
-        "drupal/default_content": "1.0.0-alpha7",
-        "drupal/default_content_moderation": "^1.0@beta",
-        "drupal/file_entity": "^2.0",
-        "drupal/lightning_api": "3.5",
+        "drupal/jsonapi_hypermedia": "^1.0@alpha",
+        "drupal/lightning_api": "^4.0",
         "drupal/lightning_core": "^4.0",
-        "drupal/lightning_layout": "2.0.0-alpha11",
-        "drupal/lightning_media": "3.8",
-        "drupal/lightning_workflow": "3.5",
+        "drupal/lightning_layout": "^2.0",
+        "drupal/lightning_media": "^3.0",
         "drush/drush": "<9.6.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -65,8 +60,7 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "setup": [
-            "cd docroot && php core/scripts/drupal install config_installer --no-interaction",
-            "./scripts/set_content_directory.sh",
+            "drush site:install --existing-config --yes",
             "@composer refresh-content"
         ],
         "refresh-content": [
@@ -79,11 +73,6 @@
             "@composer install",
             "@composer setup",
             "@composer run-server"
-        ],
-        "custom-quick-start": [
-            "drush si config_installer --yes",
-            "@composer refresh-content",
-            "drush user:pass admin admin"
         ]
     },
     "extra": {
@@ -114,25 +103,10 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/config_installer": {
-                "2991182 - Using with `core/scripts/drupal install` results in RuntimeException from Drush":
-                "https://www.drupal.org/files/issues/2018-08-21/2991182-6.patch"
-            },
+            "drupal/config_installer": {},
             "drupal/core": {
-                "Remove hook_install from Umami demo profile":
-                "./patches/umami-hook-install.patch",
-                "2995689: Allow reordering blocks without a pointer device":
-                "https://www.drupal.org/files/issues/2019-03-20/2995689-112.patch",
-                "2959493: Allow Layout Builder live previews to be toggled to allow easier drag-and-drop":
-                "https://www.drupal.org/files/issues/2019-03-20/2959493-126.patch",
-                "2988970: Layout Builder should make it easier to modify the default layout for an entity type when viewing an entity":
-                "https://www.drupal.org/files/issues/2019-02-28/2988970-54.patch",
-                "2938182: Design intuitive affordances for Layout Builder (for illustrating which parts of the page are editable in a given context)":
-                "https://www.drupal.org/files/issues/2019-02-27/2938182-27.patch"
-            },
-            "drupal/layout_builder_restrictions": {
-                "3041763: Unable to place blocks in Layout Library Layout":
-                "https://www.drupal.org/files/issues/2019-03-20/3041763-3.patch"
+                "Remove install hook from Umami so it can be installed from config.":
+                "patches/umami-hook-install.patch"
             }
         }
     }

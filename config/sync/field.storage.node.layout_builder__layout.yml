@@ -1,10 +1,12 @@
-uuid: 3f51dec5-4703-45d9-a549-606c63baaa87
+uuid: c9324d16-f861-4dc0-bdc0-9272cb31de1e
 langcode: en
 status: true
 dependencies:
   module:
     - layout_builder
     - node
+_core:
+  default_config_hash: g7kepf2eck__olXZwnmcQdOVAdSZR0cr77Jm-uf6wfA
 id: node.layout_builder__layout
 field_name: layout_builder__layout
 entity_type: node
@@ -13,7 +15,7 @@ settings: {  }
 module: layout_builder
 locked: true
 cardinality: 1
-translatable: true
+translatable: false
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

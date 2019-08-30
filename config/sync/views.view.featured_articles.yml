@@ -1,16 +1,16 @@
-uuid: 785fcfde-c281-4289-986b-ec603738fcbb
+uuid: 13a1d7b0-59dd-4d88-8dfb-a5a240f02089
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.press_release
+    - core.entity_view_mode.node.card
+    - node.type.article
     - system.menu.main
   module:
     - node
     - user
 _core:
-  default_config_hash: FVdb8hlPPEm2qIpcMyUtxYL3aIGwW0yxEV6Sji4JpiE
+  default_config_hash: xpzP6hLV6g3cT1MSWBPwDQ-IXXH-WUfYJvKOTy6sK3c
 id: featured_articles
 label: 'Featured Articles'
 module: views
@@ -71,15 +71,11 @@ display:
             next: ››
       style:
         type: default
-        options:
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: card
       fields:
         title:
           id: title
@@ -144,12 +140,21 @@ display:
           id: type
           table: node_field_data
           field: type
+          value:
+            article: article
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
           relationship: none
           group_type: group
           admin_label: ''
           operator: in
           value:
-            press_release: press_release
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
           group: 1
           exposed: false
           expose:
@@ -165,7 +170,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            argument: null
           is_grouped: false
           group_info:
             label: ''
@@ -179,8 +183,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: type
-          plugin_id: bundle
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
@@ -197,14 +201,28 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Press Releases'
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: standard
+      title: Articles
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: ''
+      css_class: grid--3
     cache_metadata:
       max-age: -1
       contexts:
@@ -221,17 +239,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: press-releases
+      path: articles
       menu:
         type: normal
-        title: 'Press Releases'
+        title: Articles
         description: ''
         expanded: false
         parent: ''
         weight: 20
         context: '0'
         menu_name: main
-        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

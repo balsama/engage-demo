@@ -1,4 +1,4 @@
-uuid: 4625ee16-1c69-4141-87e2-4dd8118c5150
+uuid: d9bf34fb-6a65-4388-a4a9-2960ba3ebab7
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - image
     - link
 _core:
-  default_config_hash: 2GPG0oUAYIESnuTuGgcvN5o2Y8VgA3nkjb7ptpCe9nE
+  default_config_hash: _usqO1VOvQWopiAxcu-VZAGPCU0pBEFDzOIpZD5p5Uo
 id: block_content.banner_block.default
 targetEntityType: block_content
 bundle: banner_block
@@ -55,4 +55,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  langcode: true

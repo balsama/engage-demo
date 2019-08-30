@@ -1,4 +1,4 @@
-uuid: 9fb6442b-a573-4fcc-9c7a-2f532e4ed740
+uuid: a22400a9-2fe0-446c-aa22-0ec07d061f87
 langcode: en
 status: true
 dependencies:
@@ -683,7 +683,7 @@ display:
           1: AND
       css_class: admin-dblog
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -700,7 +700,7 @@ display:
       display_extenders: {  }
       path: admin/reports/dblog
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

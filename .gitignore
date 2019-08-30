@@ -27,3 +27,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Dev database
+/sqlite/.ht.sqlite

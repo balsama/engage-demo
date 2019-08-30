@@ -1,4 +1,4 @@
-uuid: 5ca6be64-2d8f-4f4b-a4a0-75e6d3a5489b
+uuid: 4dfb8514-2556-4ae6-a695-88c96cc052b1
 langcode: en
 status: true
 dependencies:
@@ -353,7 +353,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: false
+          destination: true
           plugin_id: entity_operations
       filters:
         title:

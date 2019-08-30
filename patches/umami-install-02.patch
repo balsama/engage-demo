@@ -1,0 +1,89 @@
+diff --git a/core/profiles/demo_umami/demo_umami.install b/core/profiles/demo_umami/demo_umami.install
+index 37025e0826..c12afa34be 100644
+--- a/core/profiles/demo_umami/demo_umami.install
++++ b/core/profiles/demo_umami/demo_umami.install
+@@ -5,9 +5,6 @@
+  * Install, update and uninstall functions for the demo_umami installation profile.
+  */
+ 
+-use Drupal\user\Entity\User;
+-use Drupal\shortcut\Entity\Shortcut;
+-
+ /**
+  * Implements hook_requirements().
+  */
+@@ -25,43 +22,3 @@ function demo_umami_requirements($phase) {
+   }
+   return $requirements;
+ }
+-
+-/**
+- * Implements hook_install().
+- *
+- * Perform actions to set up the site for this profile.
+- *
+- * @see system_install()
+- */
+-function demo_umami_install() {
+-  // Assign user 1 the "administrator" role.
+-  $user = User::load(1);
+-  $user->roles[] = 'administrator';
+-  $user->save();
+-
+-  // We install some menu links, so we have to rebuild the router, to ensure the
+-  // menu links are valid.
+-  \Drupal::service('router.builder')->rebuildIfNeeded();
+-
+-  // Populate the default shortcut set.
+-  $shortcut = Shortcut::create([
+-    'shortcut_set' => 'default',
+-    'title' => t('Add content'),
+-    'weight' => -20,
+-    'link' => ['uri' => 'internal:/node/add'],
+-  ]);
+-  $shortcut->save();
+-
+-  $shortcut = Shortcut::create([
+-    'shortcut_set' => 'default',
+-    'title' => t('All content'),
+-    'weight' => -19,
+-    'link' => ['uri' => 'internal:/admin/content'],
+-  ]);
+-  $shortcut->save();
+-
+-  // Enable the demo content module. This can't be specified as a dependency
+-  // in the demo_umami.info.yml file, as it requires configuration provided by
+-  // the profile (fields etc.).
+-  \Drupal::service('module_installer')->install(['demo_umami_content'], TRUE);
+-}
+diff --git a/core/profiles/demo_umami/demo_umami.profile b/core/profiles/demo_umami/demo_umami.profile
+index 052f5b2672..f7c67ab2c6 100644
+--- a/core/profiles/demo_umami/demo_umami.profile
++++ b/core/profiles/demo_umami/demo_umami.profile
+@@ -7,6 +7,26 @@
+ 
+ use Drupal\contact\Entity\ContactForm;
+ use Drupal\Core\Form\FormStateInterface;
++use Drupal\user\Entity\User;
++
++function demo_umami_install_tasks() {
++  $tasks = [];
++
++  $tasks['demo_umami_assign_admin'] = [];
++  $tasts['demo_umami_enable_demo_module'] = [];
++
++  return $tasks;
++}
++
++function demo_umami_assign_admin() {
++  $user = User::load(1);
++  $user->roles[] = 'administrator';
++  $user->save();
++}
++
++function demo_umami_enable_demo_module() {
++  \Drupal::service('module_installer')->install(['demo_umami_content'], TRUE);
++}
+ 
+ /**
+  * Implements hook_form_FORM_ID_alter() for install_configure_form().

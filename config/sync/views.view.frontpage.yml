@@ -1,13 +1,16 @@
-uuid: ac53298b-639b-4eac-b611-437aee4582f0
+uuid: b8c15183-286b-4c36-b637-cd21e0da5c87
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.card_common
     - core.entity_view_mode.node.rss
-    - node.type.article
+    - node.type.recipe
   module:
     - node
+    - user
+_core:
+  default_config_hash: DlLP4bxuOm24qTUGR98RLHIm0tn0WRGu-8fjMaIJhzQ
 id: frontpage
 label: Frontpage
 module: node
@@ -20,8 +23,9 @@ display:
   default:
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -169,7 +173,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            article: article
+            recipe: recipe
           group: 1
           exposed: false
           expose:
@@ -185,7 +189,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            argument: null
           is_grouped: false
           group_info:
             label: ''
@@ -204,7 +207,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 2
+          items_per_page: 4
           offset: 0
       query:
         type: views_query
@@ -218,7 +221,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: card
+          view_mode: card_common
       sorts:
         sticky:
           admin_label: ''
@@ -249,6 +252,20 @@ display:
           granularity: second
           entity_type: node
           entity_field: created
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: standard
       style:
         type: default
         options:
@@ -268,7 +285,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2 class="text-align-center">Balancing the books is our bread & butter.</h2>'
+            value: '<h2 class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level.</h2>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -284,6 +301,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
+        - user.permissions
       max-age: -1
       tags: {  }
   feed_1:
@@ -319,6 +337,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
+        - user.permissions
       max-age: -1
       tags: {  }
   page_1:
@@ -336,5 +355,6 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
+        - user.permissions
       max-age: -1
       tags: {  }
