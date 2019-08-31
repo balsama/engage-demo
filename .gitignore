@@ -10,6 +10,7 @@
 # Ignore sensitive information
 /docroot/sites/*/settings.php
 /docroot/sites/*/settings.local.php
+/docroot/sites/*/settings.dev.php
 
 # Ignore Drupal's file directory
 /docroot/sites/*/files/

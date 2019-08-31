@@ -60,11 +60,16 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "setup": [
+            "@composer copy-dev-settings",
             "drush site:install --existing-config --yes",
             "@composer refresh-content"
         ],
         "refresh-content": [
             "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content"
+        ],
+        "copy-dev-settings": [
+            "chmod -R +w docroot/sites/default",
+            "cp docroot/sites/default/default.settings.dev.php docroot/sites/default/settings.dev.php"
         ],
         "run-server": [
             "cd docroot && php core/scripts/drupal server --no-interaction"
