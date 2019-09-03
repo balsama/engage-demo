@@ -1,13 +1,11 @@
-uuid: 01e9bf41-256b-4b23-a7a7-0bcee8cc8a43
+uuid: ac8e315e-752e-4f75-882e-c3996bc20fa2
 langcode: en
 status: true
 dependencies:
   module:
-    - lightning_core
     - node
-third_party_settings:
-  lightning_core:
-    description: ''
+_core:
+  default_config_hash: z6QSG0XSjPK_V4notuY8MaeIAO_QnwfvuH825TyLiHg
 id: node.card
 label: Card
 targetEntityType: node

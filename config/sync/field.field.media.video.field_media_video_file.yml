@@ -1,4 +1,4 @@
-uuid: 7af35891-7675-4580-a195-227fbf00d81e
+uuid: 552fb689-cc32-4761-b8ea-d4a71573c672
 langcode: en
 status: true
 dependencies:
@@ -20,8 +20,8 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: mp4
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   max_filesize: ''
   description_field: false
   handler: 'default:file'

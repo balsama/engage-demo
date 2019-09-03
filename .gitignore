@@ -8,8 +8,8 @@
 /docroot/libraries/
 
 # Ignore sensitive information
-/docroot/sites/*/settings.php
 /docroot/sites/*/settings.local.php
+/docroot/sites/*/settings.dev.php
 
 # Ignore Drupal's file directory
 /docroot/sites/*/files/
@@ -27,3 +27,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Dev database
+/sqlite/*.sqlite

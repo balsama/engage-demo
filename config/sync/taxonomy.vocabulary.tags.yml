@@ -1,9 +1,9 @@
-uuid: b6c98c6c-389a-4770-9f68-4672d618d85a
+uuid: f8a839c6-8b23-4967-be87-c9bd536e403a
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
 name: Tags
 vid: tags
 description: 'Use tags to group articles on similar topics into categories.'

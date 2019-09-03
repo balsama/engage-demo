@@ -16,9 +16,3 @@ events:
             - export PATH="$HOME/.composer/vendor/bin:$SOURCE_DIR/vendor/bin:$PATH"
             - composer validate --no-check-all --ansi --no-interaction
             - composer install
-      - cleanup:
-          type: script
-          script:
-            - cd $SOURCE_DIR
-            # Setup settings file and codebase with minimum required for cloud.
-            - ./scripts/configure_cloud.sh

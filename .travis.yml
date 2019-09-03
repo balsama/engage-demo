@@ -41,11 +41,6 @@ install:
   # Install the demo cleanly so that settings.php will be created properly.
   - composer setup
 
-before_script:
-  - drush runserver --default-server=builtin 8080 &>/dev/null &
-  - google-chrome-stable --headless --disable-gpu --no-sandbox --remote-debugging-port=9222 http://localhost &
-  - drush status
-
 script:
   - composer validate composer.json --no-check-all --ansi --no-interaction
   # We're not actually running any tests. Just making sure we got here.

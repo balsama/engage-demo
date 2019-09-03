@@ -1,9 +1,9 @@
-uuid: 0e1252e1-8734-442d-a8c8-efb08cde36e6
+uuid: 23271a27-bb21-47cc-b292-e45747f31014
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+  default_config_hash: Qf1B6Oytv6SDX58ba6IfUBGsq76oCUzu5Mpp9fevDJw
 id: anonymous
 label: 'Anonymous user'
 weight: 0
