@@ -30,4 +30,4 @@
 /.env
 
 # Dev database
-/sqlite/.ht.sqlite
+/sqlite/*.sqlite
