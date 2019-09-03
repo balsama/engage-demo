@@ -774,10 +774,13 @@ $settings['entity_update_backup'] = TRUE;
  * Keep this code block at the end of this file to take full effect.
  */
 
-$config_directories['sync'] = '../config/sync';
+// Dev settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.dev.php')) {
   include $app_root . '/' . $site_path . '/settings.dev.php';
 }
+// Cloud settings.
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/engagedemo/engagedemo-settings.inc';
 }
+// Actual config dir must come after Cloud settings.
+$config_directories['sync'] = '../config/sync';
