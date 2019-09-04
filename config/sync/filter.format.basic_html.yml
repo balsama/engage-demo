@@ -1,11 +1,11 @@
-uuid: 15d5debf-4ae7-4efc-a5df-dbb737e56a34
+uuid: 78c2b998-a201-46a2-865b-dcc6b1573319
 langcode: en
 status: true
 dependencies:
   module:
     - editor
 _core:
-  default_config_hash: LzCNBOeYvDX1M6LZtPw5LA3czZmf4V-AcngIywgi4oQ
+  default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -42,10 +42,4 @@ filters:
     provider: editor
     status: true
     weight: 11
-    settings: {  }
-  filter_autop:
-    id: filter_autop
-    provider: filter
-    status: true
-    weight: 0
     settings: {  }
