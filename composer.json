@@ -17,6 +17,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/jsonapi_extras": "^3.10",
         "drupal/jsonapi_hypermedia": "^1.0@alpha",
         "drupal/lightning_api": "^4.0",
         "drupal/lightning_core": "^4.0",
@@ -65,7 +66,7 @@
             "@composer refresh-content"
         ],
         "refresh-content": [
-            "drush pm:uninstall demo_umami_content && drush pm:enable demo_umami_content"
+            "drush pm:uninstall jsonapi_demo_content && drush pm:enable jsonapi_demo_content"
         ],
         "copy-dev-settings": [
             "chmod -R +w docroot/sites/default",
@@ -110,8 +111,8 @@
         "patches": {
             "drupal/config_installer": {},
             "drupal/core": {
-                "Remove install hook from Umami so it can be installed from config.":
-                "patches/umami-hook-install.patch"
+                "Don't run Standard's install hook if the site is being installed from config.":
+                "patches/standard-hook_install-remove.patch"
             }
         }
     }
