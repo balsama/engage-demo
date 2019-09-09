@@ -780,7 +780,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.dev.php')) {
 }
 // Cloud settings.
 if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/engagedemo/engagedemo-settings.inc';
+  require '/var/www/site-php/examplejsonapi/examplejsonapi-settings.inc';
 }
 // Actual config dir must come after Cloud settings.
 $config_directories['sync'] = '../config/sync';
