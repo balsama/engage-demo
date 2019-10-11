@@ -1,4 +1,4 @@
-uuid: 5b3e0cee-0908-4e63-bac6-3170bd8d0c9a
+uuid: f83db0dc-d583-418e-bc5f-0ace783ed972
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - dblog
     - user
 _core:
-  default_config_hash: mRpCPs9ab0M-w_gYtSyRgFco6FohGMSbiN4DH4-xAxU
+  default_config_hash: mjtUzZuw0GHYsXHcdhIIe2rTwZQyQJe0elcYoMNmDq0
 id: watchdog
 label: Watchdog
 module: views
@@ -585,6 +585,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -624,6 +626,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -683,7 +687,7 @@ display:
           1: AND
       css_class: admin-dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -700,7 +704,7 @@ display:
       display_extenders: {  }
       path: admin/reports/dblog
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

@@ -1,4 +1,4 @@
-uuid: b40105bc-6b31-45a2-808e-0e4bbf10c601
+uuid: 126043f4-ff45-4df4-aa42-b591494aa1f6
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: sqwEJaSgef4rCaRMf-JdNAdV_kCICU1SfQh5Wl2sUrc
+  default_config_hash: 86Q6fzBA1FJ984VDnmwAcIZ2s0vmyXHhP-sC2CMFda4
 id: content_recent
 label: 'Recent content'
 module: node
@@ -188,6 +188,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -227,6 +229,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

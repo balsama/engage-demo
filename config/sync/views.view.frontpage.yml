@@ -1,4 +1,4 @@
-uuid: 720c9bf3-b494-4cfd-b6df-137aa39360fd
+uuid: 35bd5e99-39a0-40d9-9fc9-c185e74cba88
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: ezK5Dw8P_4bqJdDQIiecSAJak9p1Wf1yDwHzTutGFuQ
+  default_config_hash: CVyqFk4uemKQHkVc0bbBGruh4BAa_1zr6gDDr6-y8jw
 id: frontpage
 label: Frontpage
 module: node
@@ -88,6 +88,8 @@ display:
               authenticated: authenticated
             required: false
             use_operator: false
+            operator_limit_selection: false
+            operator_list: {  }
           exposed: false
           field: promote
           group: 1
@@ -115,6 +117,8 @@ display:
         status:
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           field: status
           group: 1
           id: status
@@ -148,6 +152,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -1,4 +1,4 @@
-uuid: b8b52b12-437e-4997-b765-b0002fe3d845
+uuid: 7ddd0ee8-1cc9-4ea4-be52-9b06b7df6036
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - file
     - user
 _core:
-  default_config_hash: rRWxAX-IQkJ5viACQRovRkC784EyCl9493GU_G23n2Q
+  default_config_hash: j7Q6n0HBBelVIorfXM9IRbUu3c5jNQ1fZE14UQQQIck
 id: files
 label: Files
 module: file
@@ -598,6 +598,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -638,6 +640,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -679,6 +683,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -726,7 +732,7 @@ display:
         - url
         - url.query_args
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }
   page_1:
     display_plugin: page
@@ -763,7 +769,7 @@ display:
         - url
         - url.query_args
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }
   page_2:
     display_plugin: page
@@ -1120,5 +1126,5 @@ display:
         - url
         - url.query_args
         - user.permissions
-      max-age: 0
+      max-age: -1
       tags: {  }

@@ -1,4 +1,4 @@
-uuid: bd5f01a6-3352-4e9e-9775-7a90337efc00
+uuid: 7bdcf73a-d150-480e-bfeb-42fef4d3d536
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
+  default_config_hash: wc-nZM_MzBh_faw0P2KGqZ-KMFVHoMz-2mj2l9KGPcE
 id: content
 label: Content
 module: node
@@ -381,6 +381,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -422,6 +424,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -460,6 +464,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Published status'
@@ -509,6 +515,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -533,6 +541,9 @@ display:
           plugin_id: node_status
           group: 1
           entity_type: node
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts: {  }
       title: Content
       empty:

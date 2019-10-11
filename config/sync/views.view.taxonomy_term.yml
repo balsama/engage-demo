@@ -1,4 +1,4 @@
-uuid: b8ab98de-fb2f-4251-9cba-8f526e85bc7f
+uuid: 6b0957ed-8a94-49cd-ad49-a48c5b107c3a
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: Gy5PaLdfFhtFSRqJxV-DBTF5AocKgNA2CsCNNEbvx4c
+  default_config_hash: 2Pu-pZN5mcgMtMaoBzZ7eEjPou3GOoQmbX-nN3LLIEw
 id: taxonomy_term
 label: 'Taxonomy term'
 module: taxonomy
@@ -162,6 +162,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -200,6 +202,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
