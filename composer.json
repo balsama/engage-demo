@@ -19,6 +19,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/jsonapi_extras": "^3.10",
         "drupal/jsonapi_hypermedia": "^1.0@alpha",
+        "drupal/jsonapi_schema": "^1.0@alpha",
         "drupal/lightning_api": "^4.0",
         "drupal/lightning_core": "^4.0",
         "drupal/lightning_layout": "^2.0",
