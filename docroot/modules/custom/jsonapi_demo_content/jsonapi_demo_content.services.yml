@@ -1,0 +1,5 @@
+services:
+  jsonapi_demo_content.resource_type_build_event_subscriber:
+    class: \Drupal\jsonapi_demo_content\EventSubscriber\JsonapiResourceTypeBuildEventSubscriber
+    tags:
+      - { name: event_subscriber }
