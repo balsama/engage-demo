@@ -14,3 +14,4 @@ dependencies:
   - taxonomy
   - text
   - user
+  - jsonapi
