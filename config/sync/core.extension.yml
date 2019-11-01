@@ -23,7 +23,6 @@ module:
   image: 0
   jsonapi: 0
   jsonapi_demo_content: 0
-  jsonapi_extras: 0
   jsonapi_hypermedia: 0
   link: 0
   menu_ui: 0
