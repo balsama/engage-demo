@@ -20,7 +20,7 @@
         "drupal/core": "~8.8",
         "drupal/jsonapi_explorer": "^1.0",
         "drupal/jsonapi_hypermedia": "^1.0",
-        "drupal/jsonapi_schema": "^1.0",
+        "drupal/jsonapi_schema": "^1.0@alpha",
         "drush/drush": "<9.6.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
