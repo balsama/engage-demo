@@ -30,9 +30,15 @@ final class JsonapiResourceTypeBuildEventSubscriber implements EventSubscriberIn
       $event->disableResourceType();
     }
     else {
-      $disabled_fields = array_diff_key($event->getFields(), array_flip(static::$resourceTypeWhiteList[$event->getResourceTypeName()]));
+      $field_overrides = static::$resourceTypeWhiteList[$event->getResourceTypeName()];
+      $fields = $event->getFields();
+      $disabled_fields = array_diff_key($fields, array_filter($field_overrides));
       foreach ($disabled_fields as $disabled_field) {
         $event->disableField($disabled_field);
+      }
+      $aliased_fields = array_intersect_key($fields, array_filter($field_overrides, 'is_string'));
+      foreach ($aliased_fields as $aliased_field) {
+        $event->setPublicFieldName($aliased_field, $field_overrides[$aliased_field->getInternalName()]);
       }
     }
   }
@@ -44,40 +50,38 @@ final class JsonapiResourceTypeBuildEventSubscriber implements EventSubscriberIn
    */
   protected static $resourceTypeWhiteList = [
     'node--article' => [
-      'nid',
-      'created',
-      'changed',
-      'published',
-      'title',
-      'body',
-      'path',
-      'node_type--node_type',
-      'uid',
-      'field_tags',
+      'created' => TRUE,
+      'changed' => TRUE,
+      'published' => TRUE,
+      'title' => TRUE,
+      'body' => TRUE,
+      'path' => TRUE,
+      'type' => 'bundle',
+      'uid' => 'author',
+      'field_tags' => 'tags',
     ],
     'node--page' => [
-      'nid',
-      'created',
-      'changed',
-      'published',
-      'title',
-      'body',
-      'path',
-      'node_type--node_type',
-      'uid',
+      'created' => TRUE,
+      'changed' => TRUE,
+      'published' => TRUE,
+      'title' => TRUE,
+      'body' => TRUE,
+      'path' => TRUE,
+      'type' => 'bundle',
+      'uid' => 'author',
     ],
     'node_type--node_type' => [
-      'name',
-      'type',
-      'description',
+      'name' => TRUE,
+      'type' => TRUE,
+      'description' => TRUE,
     ],
     'taxonomy_term--tags' => [
-      'name',
-      'path',
-      'parent',
+      'name' => TRUE,
+      'path' => TRUE,
+      'parent' => TRUE,
     ],
     'user--user' => [
-      'display_name',
+      'display_name' => 'displayName',
     ],
   ];
 
