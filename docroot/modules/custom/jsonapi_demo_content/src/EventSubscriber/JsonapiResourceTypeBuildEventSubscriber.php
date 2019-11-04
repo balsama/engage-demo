@@ -81,7 +81,7 @@ final class JsonapiResourceTypeBuildEventSubscriber implements EventSubscriberIn
       'parent' => TRUE,
     ],
     'user--user' => [
-      'display_name' => 'displayName',
+      'name' => TRUE,
     ],
   ];
 
